@@ -1865,4 +1865,51 @@ Branch master set up to track remote branch master from origin.
 [?1049h[1;37r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                       File: readme.md                                                      [35;47H[ Read 0 lines ][36d^G(B[m Get Help	  (B[0;7m^O(B[m WriteOut[37G(B[0;7m^R(B[m Read File[55G(B[0;7m^Y(B[m Prev Page	(B[0;7m^K(B[m Cut Text	  (B[0;7m^C(B[m Cur Pos[37d(B[0;7m^X(B[m Exit[37;19H(B[0;7m^J(B[m Justify[37;37H(B[0;7m^W(B[m Where Is[55G(B[0;7m^V(B[m Next Page	(B[0;7m^U(B[m UnCut Text     (B[0;7m^T(B[m To Spell[3d[1;99H(B[0;7mModified[3d(B[m## OTUS-KU 	 	LI unu   inux[35d[K[3;15H-Lesson 3[4d# Pflf    Задн ание о [A[3;23H 	7[4;35r8[4dM[1;37r[4;1H[5d[4;35r[35;1H
 [1;37r[4;1H[4;11H основное[5d[6dВ соотвес	 	тс 	 	тси  ствии с зада    [Z      	 	      [KЗап  [KВ соответствии с к указание[Z [Zями в м в мт етодчике    ичке	вполняем [Z       ыполняем действия:[7d[A[A[A[4;19H  7[5;35r8[5dM[1;37r[5;1H[6d[5;35r[35;1H
 [1;37r[5;1H[6d[6;60H  [7d* уменьшаем том	под / до 8П G  [8d* dsltk     вд ыделям том под /home[9d*[A [C[C[C[C[C	ем том под /home[8;10H[9d*[10d[A* выделям топ 	ем топ[10G[16G м под / var	на mirror[10d[9;34H[8;25H[7;30H[8;25H  7[9;35r8[9dM[1;37r[9;1H[10d[9;35r[35;1H
-[1;37r[9;1H[9;34H  [10d* ltkz    в хом    дя ля /home е делаем том для снэпшотов[C в в[11d* проверяем механизм   [Z [Z      	 	     п  пробуем механизм работы снэпшотов (создать, удалить, восстановить[Z[Z[Z , удалить, восстановить[11;46Hф, удалить, восстановить[11;47Hа, удалить, восстановить[11;48Hй, удалить, восстановить[11;49Hо, удалить, восстановить[11;50Hы, удалить, восстановит
+[1;37r[9;1H[9;34H  [10d* ltkz    в хом    дя ля /home е делаем том для снэпшотов[C в в[11d* проверяем механизм   [Z [Z      	 	     п  пробуем механизм работы снэпшотов (создать, удалить, восстановить[Z[Z[Z , удалить, восстановить[11;46Hф, удалить, восстановить[11;47Hа, удалить, восстановить[11;48Hй, удалить, восстановить[11;49Hо, удалить, восстановить[11;50Hы, удалить, восстановить[11;51H,[Z[1Pлы, удалить, восстановить[11;50H[C, [C[C[C	[C[C[C , восстановить[11;61Hф, восстановить[11;62Hа, восстановить[11;63Hй, восстановить[11;64Hл, восстановить[11;65Hы, восстановить[11;66H, [C[C[C[C	[C[C[C[C[C[C[C	файоы  лы)[12d[13dРезультат действий запсиа[Z [Z   писан ком   утили     в t  утилитой script в файл tup  ypescript.[Z[Z[Z[Z[1P[1P[1P[1P[1P[1P[1P[1P r script в файл typescript.[13;29Hj script в файл typescript.[13;30Hv script в файл typescript.[13;31Hf script в файл typescript.[13;32Hy script в файл typescript.[13;33H[1P[1P[1P[1P[1Pк script в файл typescript.[13;29Hо script в файл typescript.[13;30Hм script в файл typescript.[13;31Hн script в файл typescript.[13;32Hа script в файл typescript.[13;33Hд script в файл typescript.[13;34Hо script в файл typescript.[13;35Hй script в файл typescript.[13;36H  script в файл typescript.[13;37H[1P[13;62H[35d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                [36;1H Y(B[m Yes[K[37d(B[0;7m N(B[m No  [37;17H(B[0;7m^C(B[m Cancel[K[35;62H(B[0;7mFile Name to Write: readme.md                               [36d^G(B[m Get Help[36;28H(B[0;7mM-D(B[m DOS Format[36;55H(B[0;7mM-A(B[m Append[36;82H(B[0;7mM-B(B[m Backup File[37d(B[0;7m^C(B[m Cancel	           (B[0;7mM-M(B[m Mac Format[37;55H(B[0;7mM-P(B[m Prepend[35;30H[36d[39;49m(B[m[J[1;99H(B[0;7m        [35;45H(B[m[1K (B[0;7m[ Wrote 12 lines ](B[m[K[37;108H[37;1H[?1049l[?1l>]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ gu[Kid[Kt commit -mm[K "[K"Step 2"
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   readme.md
+#	modified:   typescript
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.vagrant/
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git commit -m "Step 2"[1@a
+[master 4f7c9df] Step 2
+ 2 files changed, 81 insertions(+), 1 deletion(-)
+]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ ll
+total 200
+-rw-rw-r--. 1 zerkalo7 zerkalo7    635 фев 24 13:41 readme.md
+-rw-rw-r--. 1 zerkalo7 zerkalo7 196608 фев 24 13:39 typescript
+-rw-rw-r--. 1 zerkalo7 zerkalo7   2433 фев 24 12:45 Vagrantfile
+]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.vagrant/
+nothing added to commit but untracked files present (use "git add" to track)
+]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git statusll[Kgit commit -am "Step 2"ll[Kgit status[Kgit push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 7, done.
