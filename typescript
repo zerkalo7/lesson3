@@ -234,12 +234,12 @@ exit
 ]0;vagrant@lvm:/home/vagrant[root@lvm vagrant]# shutdown -r now
 PolicyKit daemon disconnected from the bus.
 We are no longer a registered authentication agent.
-Connection to 127.0.0.1 closed by remote host.
-Connection to 127.0.0.1 closed.
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
 ]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ vagrant ssh
-ssh_exchange_identification: Connection closed by remote host
+ssh_exchange_identification: Connection closed by remote host
 ]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:10:20 2020 from 10.0.2.2
+Last login: Mon Feb 24 10:10:20 2020 from 10.0.2.2
 ]0;vagrant@lvm:~[?1034h[vagrant@lvm ~]$ lsblk
 NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                       8:0    0   40G  0 disk 
@@ -419,10 +419,10 @@ Writing superblocks and filesystem accounting information: 0/8   done
 ]0;vagrant@lvm:/boot[root@lvm boot]# exit
 exit
 ]0;vagrant@lvm:/home/vagrant[root@lvm vagrant]# shu[K[K[Kshutdown -r now
-Connection to 127.0.0.1 closed by remote host.
-Connection to 127.0.0.1 closed.
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
 ]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:16:08 2020 from 10.0.2.2
+Last login: Mon Feb 24 10:16:08 2020 from 10.0.2.2
 ]0;vagrant@lvm:~[?1034h[vagrant@lvm ~]$ lsblk
 NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda                        8:0    0   40G  0 disk 
@@ -508,1408 +508,4 @@ file10  file12  file14  file16  file18  file2   file3   file5  file7  file9
 exit
 ]0;vagrant@lvm:~[vagrant@lvm ~]$ exit
 logout
-Connection to 127.0.0.1 closed.
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ ll
-total 44
--rw-rw-r--. 1 zerkalo7 zerkalo7 40960 фев 24 13:25 typescript
--rw-rw-r--. 1 zerkalo7 zerkalo7  2433 фев 24 12:45 Vagrantfile
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ less tu[Kypescript 
-[?1049h[?1h=Script started on Пн 24 фев 2020 13:10:12
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^GESC[27m[?1034h[zerkalo7@server9 Ex1]$ vagrant ssh
-[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ sudo p[7mESC[27m[[7mESC[27m[Kpasswd
-Changing password for user root.
-New password: 
-BAD PASSWORD: The password is shorter than 8 characters
-Retype new password: 
-passwd: all authentication tokens updated successfully.
-[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-Password: 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# pvcreate /dev/sdb
-  Physical volume "/dev/sdb" successfully created.
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# vgcreate vg_root /dev/sdb
-  Volume group "vg_root" successfully created
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# lvcreate -n lv_root -l +100%FREE /dev/vg_root
-  Logical volume "lv_root" created.
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/vg_root/lv_root
-meta-data=/dev/vg_root/lv_root   isize=512    agcount=4, agsize=655104 blks
-         =                       sectsz=512   attr=2, projid32bit=1
-         =                       crc=1        finobt=0, sparse=0
-data     =                       bsize=4096   blocks=2620416, imaxpct=25
-         =                       sunit=0      swidth=0 blks
-naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-log      =internal log           bsize=4096   blocks=2560, version=2
-         =                       sectsz=512   sunit=0 blks, lazy-count=1
-realtime =none                   extsz=4096   blocks=0, rtextents=0
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/vg_root/lv_root /mnt
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/VolGroup00/LogVol00 | xfsrestore -J -  /mnt
-bash: xfsrestore: command not found
-bash: xfsdump: command not found
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/VolGroup00/LogVol00 | xfsrestore -J -  /mn[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[ [7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[ [7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G^G^G[27msud[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G[27myum install -y xfsdump.x86_64 [7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[
-[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[[7mESC[27m[K
-[7mtypescript[27m[K[K [KESCESC[KOO[KBB[KLoaded plugins: fastestmirror
-:[K[K [KESCESC[KOO[KBB[KLoading mirror speeds from cached hostfile
-:[K[K [KESCESC[KOO[KBB[K * base: mirror.reconn.ru
-:[K[K [KESCESC[KOO[KBB[K * extras: dedic.sh
-:[K[K [KESCESC[KOO[KBB[K * updates: mirror.reconn.ru
-:[K[K [KESCESC[KOO[KBB[KResolving Dependencies
-:[K[K [KESCESC[KOO[KBB[K--> Running transaction check
-:[K[K [KESCESC[KOO[KBB[K---> Package xfsdump.x86_64 0:3.1.7-1.el7 will be installed
-:[K[K [KESCESC[KOO[KBB[K--> Processing Dependency: attr >= 2.0.0 for package: xfsdump-3.1.7-1.el7.x86_64
-:[K[K [KESCESC[KOO[KBB[K--> Running transaction check
-:[K[K [KESCESC[KOO[KBB[K---> Package attr.x86_64 0:2.4.46-13.el7 will be installed
-:[K[K [KESCESC[KOO[KBB[K--> Finished Dependency Resolution
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[KDependencies Resolved
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[K============================================================================================================
-:[K[K [KESCESC[KOO[KBB[K Package                 Arch                   Version                          Repository            Size
-:[K[K [KESCESC[KOO[KBB[K============================================================================================================
-:[K[K [KESCESC[KOO[KBB[KInstalling:
-:[K[K [KESCESC[KOO[KBB[K xfsdump                 x86_64                 3.1.7-1.el7                      base                 308 k
-:[K[K [KESCESC[KOO[KBB[KInstalling for dependencies:
-:[K[K [KESCESC[KOO[KBB[K attr                    x86_64                 2.4.46-13.el7                    base                  66 k
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[KTransaction Summary
-:[K[K [KESCESC[KOO[KBB[K============================================================================================================
-:[K[K [KESCESC[KOO[KBB[KInstall  1 Package (+1 Dependent package)
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[KTotal download size: 374 k
-:[K[K [KESCESC[KOO[KBB[KInstalled size: 1.1 M
-:[K[K [KESCESC[KOO[KBB[KDownloading packages:
-:[K[K [KESCESC[KOO[KBB[K[7m^M[27m(1/2): attr-2.4.46-13.el7.x86_64.rpm                                                 |  66 kB  00:00:00    :[K[K [KESCESC[KOO[KBB[K  
-:[K[K [KESCESC[KOO[KBB[K[7m^M[27m(2/2): xfsdump-3.1.7-1.el7.x86_64.rpm                                                | 308 kB  00:00:00    :[K[K [KESCESC[KOO[KBB[K  
-:[K[K [KESCESC[KOO[KBB[K------------------------------------------------------------------------------------------------------------
-:[K[K [KESCESC[KOO[KBB[KTotal                                                                       1.5 MB/s | 374 kB  00:00:00     
-:[K[K [KESCESC[KOO[KBB[KRunning transaction check
-:[K[K [KESCESC[KOO[KBB[KRunning transaction test
-:[K[K [KESCESC[KOO[KBB[KTransaction test succeeded
-:[K[K [KESCESC[KOO[KBB[KRunning transaction
-:[K[K [KESCESC[KOO[KBB[K[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [                                                            ] 1/ :[K[K [KESCESC[KOO[KBB[K2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [###                                                         ] 1 :[K[K [KESCESC[KOO[KBB[K/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [##########                                                  ]  :[K[K [KESCESC[KOO[KBB[K1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [################                                            ] :[K[K [KESCESC[KOO[KBB[K 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [##################                                           :[K[K [KESCESC[KOO[KBB[K] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [########################                                    :[K[K [KESCESC[KOO[KBB[K ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [#########################                                  :[K[K [KESCESC[KOO[KBB[K  ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [##############################                            :[K[K [KESCESC[KOO[KBB[K   ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [###############################                          :[K[K [KESCESC[KOO[KBB[K    ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [#####################################                   :[K[K [KESCESC[KOO[KBB[K     ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [######################################                 :[K[K [KESCESC[KOO[KBB[K      ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [#######################################               :[K[K [KESCESC[KOO[KBB[K       ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [########################################             :[K[K [KESCESC[KOO[KBB[K        ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [##########################################          :[K[K [KESCESC[KOO[KBB[K         ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [############################################       :[K[K [KESCESC[KOO[KBB[K          ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [##############################################    :[K[K [KESCESC[KOO[KBB[K           ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [################################################ :[K[K [KESCESC[KOO[KBB[K            ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [############################################### :[K[K [KESCESC[KOO[KBB[K###          ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [############################################## :[K[K [KESCESC[KOO[KBB[K######        ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [############################################# :[K[K [KESCESC[KOO[KBB[K#########      ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [############################################ :[K[K [KESCESC[KOO[KBB[K############    ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [########################################### :[K[K [KESCESC[KOO[KBB[K##############   ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [########################################## :[K[K [KESCESC[KOO[KBB[K################  ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64 [######################################### :[K[K [KESCESC[KOO[KBB[K################## ] 1/2[7m^M[27m  Installing : attr-2.4.46-13.el7.x86_64                                           :[K[K [KESCESC[KOO[KBB[K                      1/2 
-:[K[K [KESCESC[KOO[KBB[K[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [                                                           ] 2/ :[K[K [KESCESC[K[[[K66[K~~[K2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [###                                                        ] 2 /2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#######                                                    ]  2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########                                                ]  2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############                                             ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#################                                           ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################                                       ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#########################                                   ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#############################                               ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#################################                           ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#####################################                       ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#########################################                   ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [###########################################                 ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [#############################################               ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [##############################################              ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [###############################################             ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################### ###         ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################## ######       ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################# ###########   ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [############################################ #############  ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64 [########################################### ############### ] 2/2[7m^M[27m  Installing : xfsdump-3.1.7-1.el7.x86_64                                                                2/2 
-[7m^M[27m  Verifying  : attr-2.4.46-13.el7.x86_64                                                                1/ 2 
-[7m^M[27m  Verifying  : xfsdump-3.1.7-1.el7.x86_64                                                               2/ 2 
-
-Installed:
-  xfsdump.x86_64 0:3.1.7-1.el7                                                                              
-
-Dependency Installed:
-  attr.x86_64 0:2.4.46-13.el7                                                                               
-
-Complete!
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# yum install -y xfsdump[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C
-[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[Cxfsdump -J - /dev/VolGroup00/LogVol00  :[K[K [KESCESC[K[[[K66[K~~[K| xfsrestore -J - /mnt
-xfsrestore: using file dump (drive_simple) strategy
-xfsrestore: version 3.1.7 (dump format 3.0)
-xfsdump: using file dump (drive_simple) strategy
-xfsdump: version 3.1.7 (dump format 3.0)
-xfsdump: level 0 dump of lvm:/
-xfsdump: dump date: Mon Feb 24 10:12:34 2020
-xfsdump: session id: c2ef41b6-c755-4022-a08d-d118f061e188
-xfsdump: session label: ""
-xfsrestore: searching media for dump
-xfsdump: ino map phase 1: constructing initial dump list
-xfsdump: ino map phase 2: skipping (no pruning necessary)
-xfsdump: ino map phase 3: skipping (only one dump stream)
-xfsdump: ino map construction complete
-xfsdump: estimated dump size: 1663659520 bytes
-xfsdump: creating dump session media file 0 (media 0, file 0)
-xfsdump: dumping ino map
-xfsdump: dumping directories
-xfsrestore: examining media file 0
-xfsrestore: dump description: 
-xfsrestore: hostname: lvm
-xfsrestore: mount point: /
-xfsrestore: volume: /dev/mapper/VolGroup00-LogVol00
-xfsrestore: session time: Mon Feb 24 10:12:34 2020
-xfsrestore: level: 0
-xfsrestore: session label: ""
-xfsrestore: media label: ""
-xfsrestore: file system id: b60e9498-0baa-4d9f-90aa-069048217fee
-xfsrestore: session id: c2ef41b6-c755-4022-a08d-d118f061e188
-xfsrestore: media id: 84f44410-ef56-4889-b60f-b4daaa765840
-xfsrestore: searching media for directory dump
-xfsrestore: reading directories
-xfsdump: dumping non-directory files
-xfsrestore: 7139 directories and 44607 entries processed
-xfsrestore: directory post-processing
-xfsrestore: restoring non-directory files
-:[K[K [KESCESC[K[[[K66[K~~[Kxfsdump: ending media file
-xfsdump: media file size 1619515792 bytes
-xfsdump: dump size (non-dir files) : 1592936584 bytes
-xfsdump: dump complete: 15 seconds elapsed
-xfsdump: Dump Status: SUCCESS
-xfsrestore: restore complete: 15 seconds elapsed
-xfsrestore: Restore Status: SUCCESS
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi nd $i /mnt/$i; done
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-Generating grub configuration file ...
-Found linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-Found initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-done
-[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/ initramfs-//g;
-> s/.img//g"` --force; done
-Executing: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-*** Including module: bash ***
-*** Including module: nss-softokn ***
-*** Including module: i18n ***
-*** Including module: drm ***
-*** Including module: plymouth ***
-*** Including module: dm ***
-Skipping udev rule: 64-device-mapper.rules
-:[K[K [KESCESC[K[[[K66[K~~[KSkipping udev rule: 60-persistent-storage-dm.rules
-Skipping udev rule: 55-dm.rules
-*** Including module: kernel-modules ***
-Omitting driver floppy
-*** Including module: lvm ***
-Skipping udev rule: 64-device-mapper.rules
-Skipping udev rule: 56-lvm.rules
-Skipping udev rule: 60-persistent-storage-lvm.rules
-*** Including module: qemu ***
-*** Including module: resume ***
-*** Including module: rootfs-block ***
-*** Including module: terminfo ***
-*** Including module: udev-rules ***
-Skipping udev rule: 40-redhat-cpu-hotplug.rules
-Skipping udev rule: 91-permissions.rules
-*** Including module: biosdevname ***
-*** Including module: systemd ***
-*** Including module: usrmount ***
-*** Including module: base ***
-*** Including module: fs-lib ***
-*** Including module: shutdown ***
-*** Including modules done ***
-*** Installing kernel module dependencies and firmware ***
-*** Installing kernel module dependencies and firmware done ***
-*** Resolving executable dependencies ***
-*** Resolving executable dependencies done***
-*** Hardlinking files ***
-*** Hardlinking files done ***
-*** Stripping files ***
-*** Stripping files done ***
-*** Generating early-microcode cpio image contents ***
-*** Constructing AuthenticAMD.bin ****
-*** No early-microcode cpio image needed ***
-*** Store current command line parameters ***
-*** Creating image file ***
-*** Creating image file done ***
-:[K[K [KESCESC[K[[[K66[K~~[K*** Creating initramfs image file '/boot/initramfs-3.10.0-862.2.3.el7.x86_64.img' done ***
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# nano /boot/gru[7m^G[27mb2/[7mESC[27m[Kf[7mESC[27m[[7mESC[27m[Kgr[7m^G[27mub.cfg 
-bash: nano: command not found
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# sy[7mESC[27m[[7mESC[27m[[7mESC[27m[Kyum install -y nano
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirror.reconn.ru
- * extras: dedic.sh
- * updates: mirror.reconn.ru
-Resolving Dependencies
---> Running transaction check
----> Package nano.x86_64 0:2.3.1-10.el7 will be installed
---> Finished Dependency Resolution
-
-Dependencies Resolved
-
-============================================================================================================
- Package               Arch                    Version                          Repository             Size
-============================================================================================================
-Installing:
- nano                  x86_64                  2.3.1-10.el7                     base                  440 k
-
-Transaction Summary
-============================================================================================================
-Install  1 Package
-
-Total download size: 440 k
-Installed size: 1.6 M
-Downloading packages:
-[7m^M[27mnano-2.3.1-10.el7.x86_64.rpm            0% [                              ]  0.0 B/s |    0 B  --:--:-- ET A [7m^M^M[27mnano-2.3.1-10.el7.x86_64.rpm                                                         | 440 kB  00:00:0 0     
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-:[K[K [KESCESC[K[[[K66[K~~[K[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [                                                             ] 1/ 1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##                                                           ] 1 /1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####                                                         ]  1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######                                                       ]  1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######                                                       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########                                                     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########                                                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############                                                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##############                                                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############                                               ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################                                              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################                                             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################                                           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################                                          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################                                        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################                                       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################                                     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################                                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################                                   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################                                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################                               ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################                              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################                             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################                           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################                         ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################                        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################################                       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################### ###                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##################################### ######                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################### ########                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################### ##########                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################## #############              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################# ###############             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################ #################            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################### ###################           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################## :[K[K [KESCESC[K[[[K66[K~~[K#####################          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################# ########################        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################ ##########################       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################### ############################      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################## ##############################     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################### ################################    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################## ##################################   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################### ####################################  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################### ###################################### ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64                                                                  1/1 
-[7m^M[27m  Verifying  : nano-2.3.1-10.el7.x86_64                                                                 1/ 1 
-
-Installed:
-  nano.x86_64 0:2.3.1-10.el7                                                                                
-
-Complete!
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# yum install -y nano[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C [7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[Cnano /boot/grub2/grub.cfg 
-[7mESC[27m[?1049h[7mESC[27m[1;37r[7mESC[27m(B[7mESC[27m[m[7mESC[27m[4l[7mESC[27m[?7h[7mESC[27m[?12l[7mESC[27m[?25h[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[39;49m[7mESC[27m[39; 49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[H[7mESC[27m[2J[7mESC[27m(B[7mESC[27m[0;7m  GNU nano 2.3.1                    File: /boot/grub2/grub.cfg                                               [7mESC[27m[3;1H[7mESC[27m(B[7mESC[27m[m#[7m^MESC[27m[4d# DO NOT EDIT THIS FILE[7m^MESC[27m[5d#[7m^MESC[27m[6d# It  is automatically generated by grub2-mkconfig using templates[7m^MESC[27m[7d# from /etc/grub.d and settings from /e tc/default/grub[7m^MESC[27m[8d#[7m^MESC[27m[10d### BEGIN /etc/grub.d/00_header ###[7m^MESC[27m[11dset pager=1[7m^MESC[27m[13dif [ -s $pr efix/grubenv ]; then[7mESC[27m[14;3Hload_env[7m^MESC[27m[15dfi[7m^MESC[27m[16dif [ "${next_entry}" ] ; then[7mESC[27m[17;4Hset default=" ${next_entry}"[7mESC[27m[18;4Hset next_entry=[7mESC[27m[19;4Hsave_env next_entry[7mESC[27m[20;4Hset boot_once=true[7m^MESC[27m[21delse
-[7mESC[27m[22set default="${saved_entry}"[7m^MESC[27m[23dfi[7m^MESC[27m[25dif [ x"${feature_menuentry_id}" = xy ]; then[7mESC[27m[26;3Hm enuentry_id_option="--id"[7m^MESC[27m[27delse[7mESC[27m[2menuentry_id_option=""[7m^MESC[27m[29dfi[7m^MESC[27m[31dexport menuentry_id_opt ion[7m^MESC[27m[33dif [ "${prev_saved_entry}" ]; then[7mESC[27m[34;3Hset saved_entry="${prev_saved_entry}"[7mESC[27m[35;46H[7mESC[27m(B
-[7mESC[27m[0;7m[ Read 127 lines ][7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m Get Help     [7mESC[27m(B[7mESC[27m[0;7m^O[7mESC[27m(B[7mESC[27m[m WriteOut[7mESC[27m[37G[7mESC[27m(B
-[7mESC[27m[0;7m^R[7mESC[27m(B[7mESC[27m[m Read File[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^Y[7mESC[27m(B[7mESC[27m[m Prev Page        [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cu t Text        [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cur Pos[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^X[7mESC[27m(B[7mESC[27m[m Exit[7mESC[27m[37;19H[7mESC[27m(B[7mESC[27m[0;7 m^J[7mESC[27m(B[7mESC[27m[m Justify[7mESC[27m[37;37H[7mESC[27m(B[7mESC[27m[0;7m^W[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^V[7mESC[27m(B[7mESC[27m[m Next Page
-     [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[m UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7m^MESC[27m[3d[7mESC[27m[4d[7mESC[27m[5d[7mESC[27m[6d
-[7mESC[27m[7d[7mESC[27m[8d[7mESC[27m[9d[7mESC[27m[10d[7mESC[27m[11d[7mESC[27m[12d[7mESC[27m[13d[7mESC[27m[14d[7mESC[27m[15d[7mESC[27m[16d[7mESC[27m[17d[7mESC[27m[18d[7mESC[27m[19d[7mESC[27m[20d[7mESC[27m[21d[7mESC[27m[22 d[7mESC[27m[23d[7mESC[27m[24d[7mESC[27m[25d[7mESC[27m[26d[7mESC[27m[27d[7mESC[27m[28d[7mESC[27m[35d[7mESC[27m[K[7mESC[27m[27d[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A
-:[K[K [KESCESC[K[[[K66[K~~[K[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSearch:                                                                                                      [7mESC[27m[36;20HY
-[7mESC[27m(B[7mESC[27m[m First Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mT[7mESC[27m(B[7mESC[27m[m Go To Line[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Beg of Par      [7mESC[27m(B[7mESC[27m[0;7mM-J[7mESC[27m(B[7mESC[27m[m FullJstify    [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backwards[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mC[7mESC[27m(B
-[7mESC[27m[m Cancel[7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Last Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Replace [7mESC[27m[37;56H
-[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m End of Par     [7mESC[27m(B[7mESC[27m[0;7mM-C[7mESC[27m(B[7mESC[27m[m Case Sens     [7mESC[27m(B[7mESC[27m[0;7mM-R[7mESC[27m(B[7mESC[27m[m  Regexp[7mESC[27m[K[7mESC[27m[35;9H[7mESC[27m(B[7mESC[27m[0;7mr[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7md[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mk
-[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B
-[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m( B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7m^MESC[27m[3dfi[7mESC[27m[4## END /etc/grub.d/01_users ###[7m^MESC[27m[5d [7mESC[27m[K[7mESC[27m[6d### BEGIN /etc/grub.d/10_linux ###[7mESC[27m[K[7m^MESC[27m[7dmenuentry 'CentOS Linux (3.10.0-862.2.3.el7.x86_64 ) 7 (Core)' --class centos --class gnu-linux --class gnu $[7mESC[27m[8;8H[7mESC[27m[1K load_video[7mESC[27m[9;9Hset gfxpayload=ke ep[7mESC[27m[10;8H[7mESC[27m[1K    insmod gzio[7mESC[27m[K[7mESC[27m[11;8H[7mESC[27m[1K insmod part_msdos[7mESC[27m[12;9Hinsmod xfs[7mESC[27m[13;8H[7mESC[27m[1K
-     set root='hd0,msdos2'[7mESC[27m[K[7mESC[27m[14;8H[7mESC[27m[1K       if [ x$feature_platform_search_hint = xy ]; then[7mESC[27m[15; 10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos2 --hint-efi=hd0,msdos2 --hint-barem$ [7mESC[27m[16;8H[7mESC[27m[1K      else[7mESC[27m[K[7mESC[27m[17;10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root 570897ca-e759-4c81-90 cf-389da6eee4cc[7mESC[27m[18;8H[7mESC[27m[1K   fi[7mESC[27m[K[7m^MESC[27m[19d$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdev name=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[20;8H[7mESC[27m[1K     initrd16 /initramfs-3.10.0-862.2.3.el7. x86_64.img[7m^MESC[27m[21d}[7mESC[27m[K[7m^MESC[27m[22dif [ "x$default" = 'CentOS Linux (3.10.0-862.2.3.el7.x86_64) 7 (Core)' ];  then default='Advanced options fo$[7mESC[27m[23;1H### END /etc/grub.d/10_linux ###[7m^MESC[27m[25d### BEGIN /etc/grub.d/20 _linux_xen ###[7mESC[27m[K[7m^MESC[27m[26d### END /etc/grub.d/20_linux_xen ###[7m^MESC[27m[27d[7mESC[27m[K[7mESC[27m[28d### BEGIN /etc/grub.d/2 0_ppc_terminfo ###[7m^MESC[27m[29d### END /etc/grub.d/20_ppc_terminfo ###[7m^MESC[27m[31d### BEGIN /etc/grub.d/30_os-probe r ###[7m^MESC[27m[32d### END /etc/grub.d/30_os-prober ###[7m^MESC[27m[33d[7mESC[27m[K[7mESC[27m[34d### BEGIN /etc/grub.d/40_custom ###
-[7mESC[27m[K[7m^MESC[27m[35d[7mESC[27m[K[7mESC[27m[36;20H[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m WriteOut  [7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Read File 
-[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mY[7mESC[27m(B[7mESC[27m[m Prev Page      [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cut Text       [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B [7mESC[27m[m Cur Pos[7mESC[27m[K[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mX[7mESC[27m(B[7mESC[27m[m Exit  [7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mJ[7mESC[27m(B[7mESC[27m[m Justify  [7mESC[27m[38 G[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[37;56H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Next Page      [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[ m UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7mESC[27m[19;98Hrd.lvm      lv[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.l vm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G     [7m^M[27m$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 bi osdevname=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[19;107v[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.lvm.lv=VolG roup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7mModified[7mESC[27m[19;8H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[ 1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1Pb rd.lvm.lv=VolG roup00/LogVol01 rhgb quiet[7mESC[27m[19;9[7mESC[27m[1Pv rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;9Hg rd.lvm.lv=VolGr oup00/LogVol01 rhgb quiet[7mESC[27m[19;10H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;11Hr rd.lvm.lv=VolGroup0 0/LogVol01 rhgb quiet[7mESC[27m[19;12Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;13oo rd.lvm.lv=VolGroup00/Lo gVol01 rhgb quiet[7mESC[27m[19;14Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;15H/ rd.lvm.lv=VolGroup00/LogVol :[K[K [KESCESC[K[[[K66[K~~[K01 rhgb quiet[7mESC[27m[19;16Hk rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup00/LogVol01 r hgb quiet[7mESC[27m[19;18H[7mESC[27m[Z[7mESC[27m[1[7mESC[27m[1Pl rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup0 0/LogVol01 rhgb quiet[7mESC[27m[19;18H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;19Hr rd.lvm.lv=VolGroup00/Lo gVol01 rhgb quiet[7mESC[27m[19;20Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;21oo rd.lvm.lv=VolGroup00/LogVol 01 rhgb quiet[7mESC[27m[19;22Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[1[7mESC^H^H^H^MESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSave mo dified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                [7mESC[27m[36; 1H Y[7mESC[27m(B[7mESC[27m[m Yes[7mESC[27m[K[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m N[7mESC[27m(B[7mESC[27m[m No  [7mESC[27m[37;17H[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel[7mESC[27m[ K[7mESC[27m[35;62H[7m^MESC[27m(B[7mESC[27m[0;7mFile Name to Write: /boot/grub2/grub.cfg                    [7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m  Get Help[7mESC[27m[36;28H[7mESC[27m(B[7mESC[27m[0;7mM-D[7mESC[27m(B[7mESC[27m[m DOS Format[7mESC[27m[36;55H[7mESC[27m(B[7mESC[27m[0;7mM-A[7mESC[27m(B[7mESC[27m[m Append[7mESC[27m[36;82H [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backup File[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel             [7mESC[27m(B[7mESC[27m[0;7mM-M [7mESC[27m(B[7mESC[27m[m Mac Format[7mESC[27m[37;55H[7mESC[27m(B[7mESC[27m[0;7mM-P[7mESC[27m(B[7mESC[27m[m Prepend[7mESC[27m[35;41H[7m^MESC[27m[36d[7mESC[27m[39;49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[ J[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7m        [7mESC[27m[35;44H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1K [7mESC[27m(B[7mESC[27m[0;7m[ Wrote 127 lines ][7mESC[27m(B[7mESC[27m[m[7mESC[27m[K[7mESC[27m [37;108H[7mESC[27m[37;1H[7mESC[27m[?1049l[7m^MESC[27m[?1l[7mESC[27m>[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# shutdw[7m^G^HESC[27m[Kown -r now
-Running in chroot, ignoring request.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-exit
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shutdown -r now
-PolicyKit daemon disconnected from the bus.
-We are no longer a registered authentication agent.
-Connection to 127.0.0.1 closed by remote host.[7m^M[27m
-Connection to 127.0.0.1 closed.[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-ssh_exchange_identification: Connection closed by remote host[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:10:20 2020 from 10.0.2.2[7m^M[27m
-[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                       8:0    0   40G  0 disk 
-├─sda1                    8:1    0    1M  0 part 
-├─sda2                    8:2    0    1G  0 part /boot
-└─sda3                    8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
-  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
-sdb                       8:16   0   10G  0 disk 
-└─vg_root-lv_root       253:0    0   10G  0 lvm  /
-sdc                       8:32   0    2G  0 disk 
-:[K[K [KESCESC[K[[[K66[K~~[Ksdd                       8:48   0    1G  0 disk 
-sde                       8:64   0    1G  0 disk 
-[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-Password: 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# lvremove /dev/VolGroup00/LogVol00
-Do you really want to remove active logical volume VolGroup00/LogVol00? [y/n]: y
-  Logical volume "LogVol00" successfully removed
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]#  lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00
-[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[1P
-WARNING: xfs signature detected on /dev/VolGroup00/LogVol00 at offset 0. Wipe it? [y/n]: y
-  Wiping xfs signature on /dev/VolGroup00/LogVol00.
-  Logical volume "LogVol00" created.
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/VolGroup00/LogVol00
-meta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
-         =                       sectsz=512   attr=2, projid32bit=1
-         =                       crc=1        finobt=0, sparse=0
-data     =                       bsize=4096   blocks=2097152, imaxpct=25
-         =                       sunit=0      swidth=0 blks
-naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-log      =internal log           bsize=4096   blocks=2560, version=2
-         =                       sectsz=512   sunit=0 blks, lazy-count=1
-realtime =none                   extsz=4096   blocks=0, rtextents=0
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/vg_root/lv_root | xfsrestore -J - /mn t
-xfsdump: using file dump (drive_simple) strategy
-xfsdump: version 3.1.7 (dump format 3.0)
-xfsdump: level 0 dump of lvm:/
-xfsdump: dump date: Mon Feb 24 10:17:25 2020
-xfsdump: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-xfsdump: session label: ""
-xfsrestore: using file dump (drive_simple) strategy
-xfsrestore: version 3.1.7 (dump format 3.0)
-xfsrestore: searching media for dump
-xfsdump: ino map phase 1: constructing initial dump list
-xfsdump: ino map phase 2: skipping (no pruning necessary)
-:[K[K [KESCESC[K[[[K66[K~~[Kxfsdump: ino map phase 3: skipping (only one dump stream)
-xfsdump: ino map construction complete
-xfsdump: estimated dump size: 1664715008 bytes
-xfsdump: creating dump session media file 0 (media 0, file 0)
-xfsdump: dumping ino map
-xfsdump: dumping directories
-xfsrestore: examining media file 0
-xfsrestore: dump description: 
-xfsrestore: hostname: lvm
-xfsrestore: mount point: /
-xfsrestore: volume: /dev/mapper/vg_root-lv_root
-xfsrestore: session time: Mon Feb 24 10:17:25 2020
-xfsrestore: level: 0
-xfsrestore: session label: ""
-xfsrestore: media label: ""
-xfsrestore: file system id: f9c8e314-9ba5-40d8-82ff-c62e7f762038
-xfsrestore: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-xfsrestore: media id: 6a7550f8-3519-43d4-8f58-19edf8c1f09f
-xfsrestore: searching media for directory dump
-xfsrestore: reading directories
-xfsdump: dumping non-directory files
-xfsrestore: 7156 directories and 44731 entries processed
-xfsrestore: directory post-processing
-xfsrestore: restoring non-directory files
-xfsdump: ending media file
-xfsdump: media file size 1619965184 bytes
-xfsdump: dump size (non-dir files) : 1593304824 bytes
-xfsdump: dump complete: 16 seconds elapsed
-xfsdump: Dump Status: SUCCESS
-xfsrestore: restore complete: 16 seconds elapsed
-xfsrestore: Restore Status: SUCCESS
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi nd $i /mnt/$i; done
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-Generating grub configuration file ...
-:[K[K [KESCESC[K[[[K66[K~~[KFound linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-Found initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-done
-[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/ initramfs-//g;
-> s/.img//g"` --force; done
-Executing: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-*** Including module: bash ***
-*** Including module: nss-softokn ***
-*** Including module: i18n ***
-*** Including module: drm ***
-*** Including module: plymouth ***
-*** Including module: dm ***
-Skipping udev rule: 64-device-mapper.rules
-Skipping udev rule: 60-persistent-storage-dm.rules
-Skipping udev rule: 55-dm.rules
-*** Including module: kernel-modules ***
-Omitting driver floppy
-*** Including module: lvm ***
-Skipping udev rule: 64-device-mapper.rules
-Skipping udev rule: 56-lvm.rules
-Skipping udev rule: 60-persistent-storage-lvm.rules
-*** Including module: qemu ***
-*** Including module: resume ***
-*** Including module: rootfs-block ***
-*** Including module: terminfo ***
-:[K[K [KESCESC[K[[[K66[K~~[K*** Including module: udev-rules ***
-Skipping udev rule: 40-redhat-cpu-hotplug.rules
-Skipping udev rule: 91-permissions.rules
-*** Including module: biosdevname ***
-*** Including module: systemd ***
-*** Including module: usrmount ***
-*** Including module: base ***
-*** Including module: fs-lib ***
-*** Including module: shutdown ***
-*** Including modules done ***
-*** Installing kernel module dependencies and firmware ***
-*** Installing kernel module dependencies and firmware done ***
-*** Resolving executable dependencies ***
-*** Resolving executable dependencies done***
-*** Hardlinking files ***
-*** Hardlinking files done ***
-*** Stripping files ***
-*** Stripping files done ***
-*** Generating early-microcode cpio image contents ***
-*** Constructing AuthenticAMD.bin ****
-*** No early-microcode cpio image needed ***
-*** Store current command line parameters ***
-*** Creating image file ***
-*** Creating image file done ***
-*** Creating initramfs image file '/boot/initramfs-3.10.0-862.2.3.el7.x86_64.img' done ***
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# pvcreate /dev/sdc /dev/sdd
-  Physical volume "/dev/sdc" successfully created.
-  Physical volume "/dev/sdd" successfully created.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# vgcreate vg_var /dev/sdc /dev/sdd
-  Volume group "vg_var" successfully created
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# lvcreate -L 950M -m1 -n lv_var vg_var
-  Rounding up size to full physical extent 952.00 MiB
-  Logical volume "lv_var" created.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkfs.ext4 /dev/vg_var/lv_var
-mke2fs 1.42.9 (28-Dec-2013)
-Filesystem label=
-:[K[K [KESCESC[K[[[K66[K~~[KOS type: Linux
-Block size=4096 (log=2)
-Fragment size=4096 (log=2)
-Stride=0 blocks, Stripe width=0 blocks
-60928 inodes, 243712 blocks
-12185 blocks (5.00%) reserved for the super user
-First data block=0
-Maximum filesystem blocks=249561088
-8 block groups
-32768 blocks per group, 32768 fragments per group
-7616 inodes per group
-Superblock backups stored on blocks: 
-        32768, 98304, 163840, 229376
-
-Allocating group tables: done                            
-Writing inode tables: done                            
-Creating journal (4096 blocks): done
-Writing superblocks and filesystem accounting information: done
-
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /mnt
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# cp -aR /var/* /mnt/
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkdir /tmp/oldvar && mv /var/* /tmp/oldvar
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# umount /mnt
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /var
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# echo "`blkid | grep var: | awk '{print $2}'` /var ext4 defaults 0  0" >> /etc/fstab
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-exit
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shu[7m^G^HESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G[27mshutdown -r now
-Connection to 127.0.0.1 closed by remote host.[7m^M[27m
-Connection to 127.0.0.1 closed.[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:16:08 2020 from 10.0.2.2[7m^M[27m
-[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                        8:0    0   40G  0 disk 
-:[K[K [KESCESC[K[[[K66[K~~[K├─sda1                     8:1    0    1M  0 part 
-├─sda2                     8:2    0    1G  0 part /boot
-└─sda3                     8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-sdb                        8:16   0   10G  0 disk 
-└─vg_root-lv_root        253:7    0   10G  0 lvm  
-sdc                        8:32   0    2G  0 disk 
-├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sdd                        8:48   0    1G  0 disk 
-├─vg_var-lv_var_rmeta_1  253:4    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_1 253:5    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sde                        8:64   0    1G  0 disk 
-[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-Password: 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# lvremove /dev/vg_root/lv_root
-Do you really want to remove active logical volume vg_root/lv_root? [y/n]: y
-  Logical volume "lv_root" successfully removed
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# vgremove /dev/vg_root
-  Volume group "vg_root" successfully removed
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]#  pvremove /dev/sdb
-  Labels on physical volume "/dev/sdb" successfully wiped.
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# lsblk 
-NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                        8:0    0   40G  0 disk 
-├─sda1                     8:1    0    1M  0 part 
-├─sda2                     8:2    0    1G  0 part /boot
-└─sda3                     8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-sdb                        8:16   0   10G  0 disk 
-:[K[K [KESCESC[K[[[K66[K~~[Ksdc                        8:32   0    2G  0 disk 
-├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sdd                        8:48   0    1G  0 disk 
-├─vg_var-lv_var_rmeta_1  253:4    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_1 253:5    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sde                        8:64   0    1G  0 disk 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root
-[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K66[K~~[K[K[7m(END)[27m[K[K [KESCESC[K[[[K55[K~~[K[HM  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-[HM└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-[HM│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-[HM├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-[HMsdc                        8:32   0    2G  0 disk 
-[HM└─vg_root-lv_root        253:7    0   10G  0 lvm  
-[HMsdb                        8:16   0   10G  0 disk 
-[HM  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-[HM  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-[HM└─sda3                     8:3    0   39G  0 part 
-[HM├─sda2                     8:2    0    1G  0 part /boot
-[HM├─sda1                     8:1    0    1M  0 part 
-[HMsda                        8:0    0   40G  0 disk 
-[HMNAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-[HMLast login: Mon Feb 24 10:16:08 2020 from 10.0.2.2[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMConnection to 127.0.0.1 closed.[7m^M[27m
-[HMConnection to 127.0.0.1 closed by remote host.[7m^M[27m
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shu[7m^G^HESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G[27mshutdown -r now
-[HMexit
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-[HM0" >> /etc/fstab
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# echo "`blkid | grep var: | awk '{print $2}'` /var ext4 defaults 0 [HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /var
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# umount /mnt
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkdir /tmp/oldvar && mv /var/* /tmp/oldvar
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# cp -aR /var/* /mnt/
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /mnt
-[HM
-[HMWriting superblocks and filesystem accounting information: done
-[HMCreating journal (4096 blocks): done
-[HMWriting inode tables: done                            
-[HMAllocating group tables: done                            
-[HM
-[HM        32768, 98304, 163840, 229376
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMSuperblock backups stored on blocks: 
-[HM7616 inodes per group
-[HM32768 blocks per group, 32768 fragments per group
-[HM8 block groups
-[HMMaximum filesystem blocks=249561088
-[HMFirst data block=0
-[HM12185 blocks (5.00%) reserved for the super user
-[HM60928 inodes, 243712 blocks
-[HMStride=0 blocks, Stripe width=0 blocks
-[HMFragment size=4096 (log=2)
-[HMBlock size=4096 (log=2)
-[HMOS type: Linux
-[HMFilesystem label=
-[HMmke2fs 1.42.9 (28-Dec-2013)
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkfs.ext4 /dev/vg_var/lv_var
-[HM  Logical volume "lv_var" created.
-[HM  Rounding up size to full physical extent 952.00 MiB
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# lvcreate -L 950M -m1 -n lv_var vg_var
-[HM  Volume group "vg_var" successfully created
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# vgcreate vg_var /dev/sdc /dev/sdd
-[HM  Physical volume "/dev/sdd" successfully created.
-[HM  Physical volume "/dev/sdc" successfully created.
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# pvcreate /dev/sdc /dev/sdd
-[HM*** Creating initramfs image file '/boot/initramfs-3.10.0-862.2.3.el7.x86_64.img' done ***
-[HM*** Creating image file done ***
-[HM*** Creating image file ***
-[HM*** Store current command line parameters ***
-[HM*** No early-microcode cpio image needed ***
-[HM*** Constructing AuthenticAMD.bin ****
-[HM*** Generating early-microcode cpio image contents ***
-[HM*** Stripping files done ***
-[HM*** Stripping files ***
-[HM*** Hardlinking files done ***
-[HM*** Hardlinking files ***
-[HM*** Resolving executable dependencies done***
-[HM*** Resolving executable dependencies ***
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM*** Installing kernel module dependencies and firmware done ***
-[HM*** Installing kernel module dependencies and firmware ***
-[HM*** Including modules done ***
-[HM*** Including module: shutdown ***
-[HM*** Including module: fs-lib ***
-[HM*** Including module: base ***
-[HM*** Including module: usrmount ***
-[HM*** Including module: systemd ***
-[HM*** Including module: biosdevname ***
-[HMSkipping udev rule: 91-permissions.rules
-[HMSkipping udev rule: 40-redhat-cpu-hotplug.rules
-[HM*** Including module: udev-rules ***
-[HM*** Including module: terminfo ***
-[HM*** Including module: rootfs-block ***
-[HM*** Including module: resume ***
-[HM*** Including module: qemu ***
-[HMSkipping udev rule: 60-persistent-storage-lvm.rules
-[HMSkipping udev rule: 56-lvm.rules
-[HMSkipping udev rule: 64-device-mapper.rules
-[HM*** Including module: lvm ***
-[HMOmitting driver floppy
-[HM*** Including module: kernel-modules ***
-[HMSkipping udev rule: 55-dm.rules
-[HMSkipping udev rule: 60-persistent-storage-dm.rules
-[HMSkipping udev rule: 64-device-mapper.rules
-[HM*** Including module: dm ***
-[HM*** Including module: plymouth ***
-[HM*** Including module: drm ***
-[HM*** Including module: i18n ***
-[HM*** Including module: nss-softokn ***
-[HM*** Including module: bash ***
-[HMdracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-[HMdracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-[HMdracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-[HMdracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-[HMdracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMdracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-[HMdracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-[HMdracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-[HMdracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-[HMdracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-[HMExecuting: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-[HM> s/.img//g"` --force; done
-[HMinitramfs-//g;
-[HM[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/[HMdone
-[HMFound initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-[HMFound linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-[HMGenerating grub configuration file ...
-[HM[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[HMnd $i /mnt/$i; done
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi[HMxfsrestore: Restore Status: SUCCESS
-[HMxfsrestore: restore complete: 16 seconds elapsed
-[HMxfsdump: Dump Status: SUCCESS
-[HMxfsdump: dump complete: 16 seconds elapsed
-[HMxfsdump: dump size (non-dir files) : 1593304824 bytes
-[HMxfsdump: media file size 1619965184 bytes
-[HMxfsdump: ending media file
-[HMxfsrestore: restoring non-directory files
-[HMxfsrestore: directory post-processing
-[HMxfsrestore: 7156 directories and 44731 entries processed
-[HMxfsdump: dumping non-directory files
-[HMxfsrestore: reading directories
-[HMxfsrestore: searching media for directory dump
-[HMxfsrestore: media id: 6a7550f8-3519-43d4-8f58-19edf8c1f09f
-[HMxfsrestore: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-[HMxfsrestore: file system id: f9c8e314-9ba5-40d8-82ff-c62e7f762038
-[HMxfsrestore: media label: ""
-[HMxfsrestore: session label: ""
-[HMxfsrestore: level: 0
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMxfsrestore: session time: Mon Feb 24 10:17:25 2020
-[HMxfsrestore: volume: /dev/mapper/vg_root-lv_root
-[HMxfsrestore: mount point: /
-[HMxfsrestore: hostname: lvm
-[HMxfsrestore: dump description: 
-[HMxfsrestore: examining media file 0
-[HMxfsdump: dumping directories
-[HMxfsdump: dumping ino map
-[HMxfsdump: creating dump session media file 0 (media 0, file 0)
-[HMxfsdump: estimated dump size: 1664715008 bytes
-[HMxfsdump: ino map construction complete
-[HMxfsdump: ino map phase 3: skipping (only one dump stream)
-[HMxfsdump: ino map phase 2: skipping (no pruning necessary)
-[HMxfsdump: ino map phase 1: constructing initial dump list
-[HMxfsrestore: searching media for dump
-[HMxfsrestore: version 3.1.7 (dump format 3.0)
-[HMxfsrestore: using file dump (drive_simple) strategy
-[HMxfsdump: session label: ""
-[HMxfsdump: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-[HMxfsdump: dump date: Mon Feb 24 10:17:25 2020
-[HMxfsdump: level 0 dump of lvm:/
-[HMxfsdump: version 3.1.7 (dump format 3.0)
-[HMxfsdump: using file dump (drive_simple) strategy
-[HMt
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/vg_root/lv_root | xfsrestore -J - /mn[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
-[HMrealtime =none                   extsz=4096   blocks=0, rtextents=0
-[HM         =                       sectsz=512   sunit=0 blks, lazy-count=1
-[HMlog      =internal log           bsize=4096   blocks=2560, version=2
-[HMnaming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-[HM         =                       sunit=0      swidth=0 blks
-[HMdata     =                       bsize=4096   blocks=2097152, imaxpct=25
-[HM         =                       crc=1        finobt=0, sparse=0
-[HM         =                       sectsz=512   attr=2, projid32bit=1
-[HMmeta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/VolGroup00/LogVol00
-[37;1H[K:[K[K [KESCESC[K[[[K66[K~~[Kxfsrestore: level: 0
-xfsrestore: session label: ""
-xfsrestore: media label: ""
-xfsrestore: file system id: f9c8e314-9ba5-40d8-82ff-c62e7f762038
-xfsrestore: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-xfsrestore: media id: 6a7550f8-3519-43d4-8f58-19edf8c1f09f
-xfsrestore: searching media for directory dump
-xfsrestore: reading directories
-xfsdump: dumping non-directory files
-xfsrestore: 7156 directories and 44731 entries processed
-xfsrestore: directory post-processing
-xfsrestore: restoring non-directory files
-xfsdump: ending media file
-xfsdump: media file size 1619965184 bytes
-xfsdump: dump size (non-dir files) : 1593304824 bytes
-xfsdump: dump complete: 16 seconds elapsed
-xfsdump: Dump Status: SUCCESS
-xfsrestore: restore complete: 16 seconds elapsed
-xfsrestore: Restore Status: SUCCESS
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi nd $i /mnt/$i; done
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-Generating grub configuration file ...
-Found linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-Found initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-done
-[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/ initramfs-//g;
-> s/.img//g"` --force; done
-Executing: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-:[K[K [KESCESC[K[[[K66[K~~[Kdracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-*** Including module: bash ***
-*** Including module: nss-softokn ***
-*** Including module: i18n ***
-*** Including module: drm ***
-*** Including module: plymouth ***
-*** Including module: dm ***
-Skipping udev rule: 64-device-mapper.rules
-Skipping udev rule: 60-persistent-storage-dm.rules
-Skipping udev rule: 55-dm.rules
-*** Including module: kernel-modules ***
-Omitting driver floppy
-*** Including module: lvm ***
-Skipping udev rule: 64-device-mapper.rules
-Skipping udev rule: 56-lvm.rules
-Skipping udev rule: 60-persistent-storage-lvm.rules
-*** Including module: qemu ***
-*** Including module: resume ***
-*** Including module: rootfs-block ***
-*** Including module: terminfo ***
-*** Including module: udev-rules ***
-Skipping udev rule: 40-redhat-cpu-hotplug.rules
-Skipping udev rule: 91-permissions.rules
-*** Including module: biosdevname ***
-*** Including module: systemd ***
-*** Including module: usrmount ***
-*** Including module: base ***
-*** Including module: fs-lib ***
-*** Including module: shutdown ***
-*** Including modules done ***
-*** Installing kernel module dependencies and firmware ***
-*** Installing kernel module dependencies and firmware done ***
-:[K[K [KESCESC[K[[[K66[K~~[K*** Resolving executable dependencies ***
-*** Resolving executable dependencies done***
-*** Hardlinking files ***
-*** Hardlinking files done ***
-*** Stripping files ***
-*** Stripping files done ***
-*** Generating early-microcode cpio image contents ***
-*** Constructing AuthenticAMD.bin ****
-*** No early-microcode cpio image needed ***
-*** Store current command line parameters ***
-*** Creating image file ***
-*** Creating image file done ***
-*** Creating initramfs image file '/boot/initramfs-3.10.0-862.2.3.el7.x86_64.img' done ***
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# pvcreate /dev/sdc /dev/sdd
-  Physical volume "/dev/sdc" successfully created.
-  Physical volume "/dev/sdd" successfully created.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# vgcreate vg_var /dev/sdc /dev/sdd
-  Volume group "vg_var" successfully created
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# lvcreate -L 950M -m1 -n lv_var vg_var
-  Rounding up size to full physical extent 952.00 MiB
-  Logical volume "lv_var" created.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkfs.ext4 /dev/vg_var/lv_var
-mke2fs 1.42.9 (28-Dec-2013)
-Filesystem label=
-OS type: Linux
-Block size=4096 (log=2)
-Fragment size=4096 (log=2)
-Stride=0 blocks, Stripe width=0 blocks
-60928 inodes, 243712 blocks
-12185 blocks (5.00%) reserved for the super user
-First data block=0
-Maximum filesystem blocks=249561088
-8 block groups
-32768 blocks per group, 32768 fragments per group
-7616 inodes per group
-Superblock backups stored on blocks: 
-:[K[K [KESCESC[K[[[K66[K~~[K        32768, 98304, 163840, 229376
-
-Allocating group tables: done                            
-Writing inode tables: done                            
-Creating journal (4096 blocks): done
-Writing superblocks and filesystem accounting information: done
-
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /mnt
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# cp -aR /var/* /mnt/
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkdir /tmp/oldvar && mv /var/* /tmp/oldvar
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# umount /mnt
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /var
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# echo "`blkid | grep var: | awk '{print $2}'` /var ext4 defaults 0  0" >> /etc/fstab
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-exit
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shu[7m^G^HESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G[27mshutdown -r now
-Connection to 127.0.0.1 closed by remote host.[7m^M[27m
-Connection to 127.0.0.1 closed.[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:16:08 2020 from 10.0.2.2[7m^M[27m
-[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                        8:0    0   40G  0 disk 
-├─sda1                     8:1    0    1M  0 part 
-├─sda2                     8:2    0    1G  0 part /boot
-└─sda3                     8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-sdb                        8:16   0   10G  0 disk 
-└─vg_root-lv_root        253:7    0   10G  0 lvm  
-sdc                        8:32   0    2G  0 disk 
-├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-:[K[K [KESCESC[K[[[K66[K~~[Ksdd                        8:48   0    1G  0 disk 
-├─vg_var-lv_var_rmeta_1  253:4    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_1 253:5    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sde                        8:64   0    1G  0 disk 
-[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-Password: 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# lvremove /dev/vg_root/lv_root
-Do you really want to remove active logical volume vg_root/lv_root? [y/n]: y
-  Logical volume "lv_root" successfully removed
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# vgremove /dev/vg_root
-  Volume group "vg_root" successfully removed
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]#  pvremove /dev/sdb
-  Labels on physical volume "/dev/sdb" successfully wiped.
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# lsblk 
-NAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                        8:0    0   40G  0 disk 
-├─sda1                     8:1    0    1M  0 part 
-├─sda2                     8:2    0    1G  0 part /boot
-└─sda3                     8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-sdb                        8:16   0   10G  0 disk 
-sdc                        8:32   0    2G  0 disk 
-├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sdd                        8:48   0    1G  0 disk 
-├─vg_var-lv_var_rmeta_1  253:4    0    4M  0 lvm  
-│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-└─vg_var-lv_var_rimage_1 253:5    0  952M  0 lvm  
-  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-sde                        8:64   0    1G  0 disk 
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root
-[7m(END)[27m[K[K [KESCESC[K[[[K55[K~~[K[HM  └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-[HM└─vg_var-lv_var_rimage_0 253:3    0  952M  0 lvm  
-[HM│ └─vg_var-lv_var        253:6    0  952M  0 lvm  /var
-[HM├─vg_var-lv_var_rmeta_0  253:2    0    4M  0 lvm  
-[HMsdc                        8:32   0    2G  0 disk 
-[HM└─vg_root-lv_root        253:7    0   10G  0 lvm  
-[HMsdb                        8:16   0   10G  0 disk 
-[HM  └─VolGroup00-LogVol01  253:1    0  1.5G  0 lvm  [SWAP]
-[HM  ├─VolGroup00-LogVol00  253:0    0    8G  0 lvm  /
-[HM└─sda3                     8:3    0   39G  0 part 
-[HM├─sda2                     8:2    0    1G  0 part /boot
-[HM├─sda1                     8:1    0    1M  0 part 
-[HMsda                        8:0    0   40G  0 disk 
-[HMNAME                     MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-[HMLast login: Mon Feb 24 10:16:08 2020 from 10.0.2.2[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMConnection to 127.0.0.1 closed.[7m^M[27m
-[HMConnection to 127.0.0.1 closed by remote host.[7m^M[27m
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shu[7m^G^HESC[27m[[7mESC[27m[[7mESC[27m[K[7m^G[27mshutdown -r now
-[HMexit
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-[HM0" >> /etc/fstab
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# echo "`blkid | grep var: | awk '{print $2}'` /var ext4 defaults 0 [HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /var
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# umount /mnt
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkdir /tmp/oldvar && mv /var/* /tmp/oldvar
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# cp -aR /var/* /mnt/
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mount /dev/vg_var/lv_var /mnt
-[HM
-[HMWriting superblocks and filesystem accounting information: done
-[HMCreating journal (4096 blocks): done
-[HMWriting inode tables: done                            
-[HMAllocating group tables: done                            
-[HM
-[HM        32768, 98304, 163840, 229376
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMSuperblock backups stored on blocks: 
-[HM7616 inodes per group
-[HM32768 blocks per group, 32768 fragments per group
-[HM8 block groups
-[HMMaximum filesystem blocks=249561088
-[HMFirst data block=0
-[HM12185 blocks (5.00%) reserved for the super user
-[HM60928 inodes, 243712 blocks
-[HMStride=0 blocks, Stripe width=0 blocks
-[HMFragment size=4096 (log=2)
-[HMBlock size=4096 (log=2)
-[HMOS type: Linux
-[HMFilesystem label=
-[HMmke2fs 1.42.9 (28-Dec-2013)
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# mkfs.ext4 /dev/vg_var/lv_var
-[HM  Logical volume "lv_var" created.
-[HM  Rounding up size to full physical extent 952.00 MiB
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# lvcreate -L 950M -m1 -n lv_var vg_var
-[HM  Volume group "vg_var" successfully created
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# vgcreate vg_var /dev/sdc /dev/sdd
-[HM  Physical volume "/dev/sdd" successfully created.
-[HM  Physical volume "/dev/sdc" successfully created.
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# pvcreate /dev/sdc /dev/sdd
-[HM*** Creating initramfs image file '/boot/initramfs-3.10.0-862.2.3.el7.x86_64.img' done ***
-[HM*** Creating image file done ***
-[HM*** Creating image file ***
-[HM*** Store current command line parameters ***
-[HM*** No early-microcode cpio image needed ***
-[HM*** Constructing AuthenticAMD.bin ****
-[HM*** Generating early-microcode cpio image contents ***
-[HM*** Stripping files done ***
-[HM*** Stripping files ***
-[HM*** Hardlinking files done ***
-[HM*** Hardlinking files ***
-[HM*** Resolving executable dependencies done***
-[HM*** Resolving executable dependencies ***
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM*** Installing kernel module dependencies and firmware done ***
-[HM*** Installing kernel module dependencies and firmware ***
-[HM*** Including modules done ***
-[HM*** Including module: shutdown ***
-[HM*** Including module: fs-lib ***
-[HM*** Including module: base ***
-[HM*** Including module: usrmount ***
-[HM*** Including module: systemd ***
-[HM*** Including module: biosdevname ***
-[HMSkipping udev rule: 91-permissions.rules
-[HMSkipping udev rule: 40-redhat-cpu-hotplug.rules
-[HM*** Including module: udev-rules ***
-[HM*** Including module: terminfo ***
-[HM*** Including module: rootfs-block ***
-[HM*** Including module: resume ***
-[HM*** Including module: qemu ***
-[HMSkipping udev rule: 60-persistent-storage-lvm.rules
-[HMSkipping udev rule: 56-lvm.rules
-[HMSkipping udev rule: 64-device-mapper.rules
-[HM*** Including module: lvm ***
-[HMOmitting driver floppy
-[HM*** Including module: kernel-modules ***
-[HMSkipping udev rule: 55-dm.rules
-[HMSkipping udev rule: 60-persistent-storage-dm.rules
-[HMSkipping udev rule: 64-device-mapper.rules
-[HM*** Including module: dm ***
-[HM*** Including module: plymouth ***
-[HM*** Including module: drm ***
-[HM*** Including module: i18n ***
-[HM*** Including module: nss-softokn ***
-[HM*** Including module: bash ***
-[HMdracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-[HMdracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-[HMdracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-[HMdracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-[HMdracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMdracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-[HMdracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-[HMdracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-[HMdracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-[HMdracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-[HMExecuting: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-[HM> s/.img//g"` --force; done
-[HMinitramfs-//g;
-[HM[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/[HMdone
-[HMFound initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-[HMFound linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-[HMGenerating grub configuration file ...
-[HM[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[HMnd $i /mnt/$i; done
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi[HMxfsrestore: Restore Status: SUCCESS
-[HMxfsrestore: restore complete: 16 seconds elapsed
-[HMxfsdump: Dump Status: SUCCESS
-[HMxfsdump: dump complete: 16 seconds elapsed
-[HMxfsdump: dump size (non-dir files) : 1593304824 bytes
-[HMxfsdump: media file size 1619965184 bytes
-[HMxfsdump: ending media file
-[HMxfsrestore: restoring non-directory files
-[HMxfsrestore: directory post-processing
-[HMxfsrestore: 7156 directories and 44731 entries processed
-[HMxfsdump: dumping non-directory files
-[HMxfsrestore: reading directories
-[HMxfsrestore: searching media for directory dump
-[HMxfsrestore: media id: 6a7550f8-3519-43d4-8f58-19edf8c1f09f
-[HMxfsrestore: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-[HMxfsrestore: file system id: f9c8e314-9ba5-40d8-82ff-c62e7f762038
-[HMxfsrestore: media label: ""
-[HMxfsrestore: session label: ""
-[HMxfsrestore: level: 0
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMxfsrestore: session time: Mon Feb 24 10:17:25 2020
-[HMxfsrestore: volume: /dev/mapper/vg_root-lv_root
-[HMxfsrestore: mount point: /
-[HMxfsrestore: hostname: lvm
-[HMxfsrestore: dump description: 
-[HMxfsrestore: examining media file 0
-[HMxfsdump: dumping directories
-[HMxfsdump: dumping ino map
-[HMxfsdump: creating dump session media file 0 (media 0, file 0)
-[HMxfsdump: estimated dump size: 1664715008 bytes
-[HMxfsdump: ino map construction complete
-[HMxfsdump: ino map phase 3: skipping (only one dump stream)
-[HMxfsdump: ino map phase 2: skipping (no pruning necessary)
-[HMxfsdump: ino map phase 1: constructing initial dump list
-[HMxfsrestore: searching media for dump
-[HMxfsrestore: version 3.1.7 (dump format 3.0)
-[HMxfsrestore: using file dump (drive_simple) strategy
-[HMxfsdump: session label: ""
-[HMxfsdump: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-[HMxfsdump: dump date: Mon Feb 24 10:17:25 2020
-[HMxfsdump: level 0 dump of lvm:/
-[HMxfsdump: version 3.1.7 (dump format 3.0)
-[HMxfsdump: using file dump (drive_simple) strategy
-[HMt
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/vg_root/lv_root | xfsrestore -J - /mn[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
-[HMrealtime =none                   extsz=4096   blocks=0, rtextents=0
-[HM         =                       sectsz=512   sunit=0 blks, lazy-count=1
-[HMlog      =internal log           bsize=4096   blocks=2560, version=2
-[HMnaming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-[HM         =                       sunit=0      swidth=0 blks
-[HMdata     =                       bsize=4096   blocks=2097152, imaxpct=25
-[HM         =                       crc=1        finobt=0, sparse=0
-[HM         =                       sectsz=512   attr=2, projid32bit=1
-[HMmeta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/VolGroup00/LogVol00
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM  Logical volume "LogVol00" created.
-[HM  Wiping xfs signature on /dev/VolGroup00/LogVol00.
-[HMWARNING: xfs signature detected on /dev/VolGroup00/LogVol00 at offset 0. Wipe it? [y/n]: y
-[HM[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[1P
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]#  lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00
-[HM  Logical volume "LogVol00" successfully removed
-[HMDo you really want to remove active logical volume VolGroup00/LogVol00? [y/n]: y
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# lvremove /dev/VolGroup00/LogVol00
-[HMPassword: 
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-[HMsde                       8:64   0    1G  0 disk 
-[HMsdd                       8:48   0    1G  0 disk 
-[HMsdc                       8:32   0    2G  0 disk 
-[HM└─vg_root-lv_root       253:0    0   10G  0 lvm  /
-[HMsdb                       8:16   0   10G  0 disk 
-[HM  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
-[HM  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
-[HM└─sda3                    8:3    0   39G  0 part 
-[HM├─sda2                    8:2    0    1G  0 part /boot
-[HM├─sda1                    8:1    0    1M  0 part 
-[HMsda                       8:0    0   40G  0 disk 
-[HMNAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-[HMLast login: Mon Feb 24 10:10:20 2020 from 10.0.2.2[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMssh_exchange_identification: Connection closed by remote host[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMConnection to 127.0.0.1 closed.[7m^M[27m
-[HMConnection to 127.0.0.1 closed by remote host.[7m^M[27m
-[HMWe are no longer a registered authentication agent.
-[HMPolicyKit daemon disconnected from the bus.
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shutdown -r now
-[HMexit
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-[HMRunning in chroot, ignoring request.
-[HM[37;108H[7mESC[27m[37;1H[7mESC[27m[?1049l[7m^MESC[27m[?1l[7mESC[27m>[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# shutdw[7m^G^HESC[27m[Kown -r now
-[37;1H[K:[K[K [KESCESC[K[[[K66[K~~[K[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/VolGroup00/LogVol00
-meta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
-         =                       sectsz=512   attr=2, projid32bit=1
-         =                       crc=1        finobt=0, sparse=0
-data     =                       bsize=4096   blocks=2097152, imaxpct=25
-         =                       sunit=0      swidth=0 blks
-naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-log      =internal log           bsize=4096   blocks=2560, version=2
-         =                       sectsz=512   sunit=0 blks, lazy-count=1
-realtime =none                   extsz=4096   blocks=0, rtextents=0
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/vg_root/lv_root | xfsrestore -J - /mn t
-xfsdump: using file dump (drive_simple) strategy
-xfsdump: version 3.1.7 (dump format 3.0)
-xfsdump: level 0 dump of lvm:/
-xfsdump: dump date: Mon Feb 24 10:17:25 2020
-xfsdump: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-xfsdump: session label: ""
-xfsrestore: using file dump (drive_simple) strategy
-xfsrestore: version 3.1.7 (dump format 3.0)
-xfsrestore: searching media for dump
-xfsdump: ino map phase 1: constructing initial dump list
-xfsdump: ino map phase 2: skipping (no pruning necessary)
-xfsdump: ino map phase 3: skipping (only one dump stream)
-xfsdump: ino map construction complete
-xfsdump: estimated dump size: 1664715008 bytes
-xfsdump: creating dump session media file 0 (media 0, file 0)
-xfsdump: dumping ino map
-xfsdump: dumping directories
-xfsrestore: examining media file 0
-xfsrestore: dump description: 
-xfsrestore: hostname: lvm
-xfsrestore: mount point: /
-xfsrestore: volume: /dev/mapper/vg_root-lv_root
-xfsrestore: session time: Mon Feb 24 10:17:25 2020
-:[K[K [KESCESC[K[[[K66[K~~[Kxfsrestore: level: 0
-xfsrestore: session label: ""
-xfsrestore: media label: ""
-xfsrestore: file system id: f9c8e314-9ba5-40d8-82ff-c62e7f762038
-xfsrestore: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-xfsrestore: media id: 6a7550f8-3519-43d4-8f58-19edf8c1f09f
-xfsrestore: searching media for directory dump
-xfsrestore: reading directories
-xfsdump: dumping non-directory files
-xfsrestore: 7156 directories and 44731 entries processed
-xfsrestore: directory post-processing
-xfsrestore: restoring non-directory files
-xfsdump: ending media file
-xfsdump: media file size 1619965184 bytes
-xfsdump: dump size (non-dir files) : 1593304824 bytes
-xfsdump: dump complete: 16 seconds elapsed
-xfsdump: Dump Status: SUCCESS
-xfsrestore: restore complete: 16 seconds elapsed
-xfsrestore: Restore Status: SUCCESS
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# for i in /proc/ /sys/ /dev/ /run/ /boot/; do mount --bi nd $i /mnt/$i; done
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# chroot /mnt/
-[7mESC[27m]0;vagrant@lvm:/[7m^GESC[27m[?1034h[root@lvm /]# grub2-mkconfig -o /boot/grub2/grub.cfg
-Generating grub configuration file ...
-Found linux image: /boot/vmlinuz-3.10.0-862.2.3.el7.x86_64
-Found initrd image: /boot/initramfs-3.10.0-862.2.3.el7.x86_64.img
-done
-[7mESC[27m]0;vagrant@lvm:/[7m^G[27m[root@lvm /]# cd /boot ; for i in `ls initramfs-*img`; do dracut -v $i `echo $i|sed "s/ initramfs-//g;
-> s/.img//g"` --force; done
-Executing: /usr/bin/dracut -v initramfs-3.10.0-862.2.3.el7.x86_64.img 3.10.0-862.2.3.el7.x86_64 --force
-dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
-dracut module 'crypt' will not be installed, because command 'cryptsetup' could not be found!
-dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
-dracut module 'dmsquash-live-ntfs' will not be installed, because command 'ntfs-3g' could not be found!
-dracut module 'multipath' will not be installed, because command 'multipath' could not be found!
-:[K[K [KESCESC[K[[[K55[K~~[K[HMxfsrestore: session time: Mon Feb 24 10:17:25 2020
-[HMxfsrestore: volume: /dev/mapper/vg_root-lv_root
-[HMxfsrestore: mount point: /
-[HMxfsrestore: hostname: lvm
-[HMxfsrestore: dump description: 
-[HMxfsrestore: examining media file 0
-[HMxfsdump: dumping directories
-[HMxfsdump: dumping ino map
-[HMxfsdump: creating dump session media file 0 (media 0, file 0)
-[HMxfsdump: estimated dump size: 1664715008 bytes
-[HMxfsdump: ino map construction complete
-[HMxfsdump: ino map phase 3: skipping (only one dump stream)
-[HMxfsdump: ino map phase 2: skipping (no pruning necessary)
-[HMxfsdump: ino map phase 1: constructing initial dump list
-[HMxfsrestore: searching media for dump
-[HMxfsrestore: version 3.1.7 (dump format 3.0)
-[HMxfsrestore: using file dump (drive_simple) strategy
-[HMxfsdump: session label: ""
-[HMxfsdump: session id: 9ddd3b4c-5c65-4bc2-8a06-879f9b6cf7f0
-[HMxfsdump: dump date: Mon Feb 24 10:17:25 2020
-[HMxfsdump: level 0 dump of lvm:/
-[HMxfsdump: version 3.1.7 (dump format 3.0)
-[HMxfsdump: using file dump (drive_simple) strategy
-[HMt
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# xfsdump -J - /dev/vg_root/lv_root | xfsrestore -J - /mn[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mount /dev/VolGroup00/LogVol00 /mnt
-[HMrealtime =none                   extsz=4096   blocks=0, rtextents=0
-[HM         =                       sectsz=512   sunit=0 blks, lazy-count=1
-[HMlog      =internal log           bsize=4096   blocks=2560, version=2
-[HMnaming   =version 2              bsize=4096   ascii-ci=0 ftype=1
-[HM         =                       sunit=0      swidth=0 blks
-[HMdata     =                       bsize=4096   blocks=2097152, imaxpct=25
-[HM         =                       crc=1        finobt=0, sparse=0
-[HM         =                       sectsz=512   attr=2, projid32bit=1
-[HMmeta-data=/dev/VolGroup00/LogVol00 isize=512    agcount=4, agsize=524288 blks
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# mkfs.xfs /dev/VolGroup00/LogVol00
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM  Logical volume "LogVol00" created.
-[HM  Wiping xfs signature on /dev/VolGroup00/LogVol00.
-[HMWARNING: xfs signature detected on /dev/VolGroup00/LogVol00 at offset 0. Wipe it? [y/n]: y
-[HM[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[1P
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]#  lvcreate -n VolGroup00/LogVol00 -L 8G /dev/VolGroup00
-[HM  Logical volume "LogVol00" successfully removed
-[HMDo you really want to remove active logical volume VolGroup00/LogVol00? [y/n]: y
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^GESC[27m[?1034h[root@lvm vagrant]# lvremove /dev/VolGroup00/LogVol00
-[HMPassword: 
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^G[27m[vagrant@lvm ~]$ su
-[HMsde                       8:64   0    1G  0 disk 
-[HMsdd                       8:48   0    1G  0 disk 
-[HMsdc                       8:32   0    2G  0 disk 
-[HM└─vg_root-lv_root       253:0    0   10G  0 lvm  /
-[HMsdb                       8:16   0   10G  0 disk 
-[HM  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
-[HM  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
-[HM└─sda3                    8:3    0   39G  0 part 
-[HM├─sda2                    8:2    0    1G  0 part /boot
-[HM├─sda1                    8:1    0    1M  0 part 
-[HMsda                       8:0    0   40G  0 disk 
-[HMNAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-[HM[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-[HMLast login: Mon Feb 24 10:10:20 2020 from 10.0.2.2[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMssh_exchange_identification: Connection closed by remote host[7m^M[27m
-[HM[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-[HMConnection to 127.0.0.1 closed.[7m^M[27m
-[HMConnection to 127.0.0.1 closed by remote host.[7m^M[27m
-[HMWe are no longer a registered authentication agent.
-[HMPolicyKit daemon disconnected from the bus.
-[HM[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shutdown -r now
-[HMexit
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-[HMRunning in chroot, ignoring request.
-[HM[37;108H[7mESC[27m[37;1H[7mESC[27m[?1049l[7m^MESC[27m[?1l[7mESC[27m>[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# shutdw[7m^G^HESC[27m[Kown -r now
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HMJ[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7m        [7mESC[27m[35;44H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1K [7mESC[27m(B[7mESC[27m[0;7m[ Wrote 127 lines ][7mESC[27m(B[7mESC[27m[m[7mESC[27m[K[7mESC[27m[HM[7mESC[27m(B[7mESC[27m[m Mac Format[7mESC[27m[37;55H[7mESC[27m(B[7mESC[27m[0;7mM-P[7mESC[27m(B[7mESC[27m[m Prepend[7mESC[27m[35;41H[7m^MESC[27m[36d[7mESC[27m[39;49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[[HM[7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backup File[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel             [7mESC[27m(B[7mESC[27m[0;7mM-M[HMGet Help[7mESC[27m[36;28H[7mESC[27m(B[7mESC[27m[0;7mM-D[7mESC[27m(B[7mESC[27m[m DOS Format[7mESC[27m[36;55H[7mESC[27m(B[7mESC[27m[0;7mM-A[7mESC[27m(B[7mESC[27m[m Append[7mESC[27m[36;82H[HMK[7mESC[27m[35;62H[7m^MESC[27m(B[7mESC[27m[0;7mFile Name to Write: /boot/grub2/grub.cfg                    [7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m [HM1H Y[7mESC[27m(B[7mESC[27m[m Yes[7mESC[27m[K[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m N[7mESC[27m(B[7mESC[27m[m No  [7mESC[27m[37;17H[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel[7mESC[27m[[HMdified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                [7mESC[27m[36;[HM01 rhgb quiet[7mESC[27m[19;22Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[1[7mESC^H^H^H^MESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSave mo[HMgVol01 rhgb quiet[7mESC[27m[19;20Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;21oo rd.lvm.lv=VolGroup00/LogVol[HM0/LogVol01 rhgb quiet[7mESC[27m[19;18H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;19Hr rd.lvm.lv=VolGroup00/Lo[HMhgb quiet[7mESC[27m[19;18H[7mESC[27m[Z[7mESC[27m[1[7mESC[27m[1Pl rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup0[HM01 rhgb quiet[7mESC[27m[19;16Hk rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup00/LogVol01 r[HMgVol01 rhgb quiet[7mESC[27m[19;14Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;15H/ rd.lvm.lv=VolGroup00/LogVol[HM0/LogVol01 rhgb quiet[7mESC[27m[19;12Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;13oo rd.lvm.lv=VolGroup00/Lo[HMoup00/LogVol01 rhgb quiet[7mESC[27m[19;10H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;11Hr rd.lvm.lv=VolGroup0[HMroup00/LogVol01 rhgb quiet[7mESC[27m[19;9[7mESC[27m[1Pv rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;9Hg rd.lvm.lv=VolGr[HM1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1Pb rd.lvm.lv=VolG[HMroup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7mModified[7mESC[27m[19;8H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[[HMosdevname=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[19;107v[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.lvm.lv=VolG[HMvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G     [7m^M[27m$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 bi[HMm UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7mESC[27m[19;98Hrd.lvm      lv[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.l[HMG[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[37;56H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Next Page      [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[[HM[7mESC[27m[m Cur Pos[7mESC[27m[K[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mX[7mESC[27m(B[7mESC[27m[m Exit  [7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mJ[7mESC[27m(B[7mESC[27m[m Justify  [7mESC[27m[38[HM[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mY[7mESC[27m(B[7mESC[27m[m Prev Page      [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cut Text       [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[HM[7mESC[27m[K[7m^MESC[27m[35d[7mESC[27m[K[7mESC[27m[36;20H[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m WriteOut  [7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Read File 
-[HMr ###[7m^MESC[27m[32d### END /etc/grub.d/30_os-prober ###[7m^MESC[27m[33d[7mESC[27m[K[7mESC[27m[34d### BEGIN /etc/grub.d/40_custom ###
-[HM0_ppc_terminfo ###[7m^MESC[27m[29d### END /etc/grub.d/20_ppc_terminfo ###[7m^MESC[27m[31d### BEGIN /etc/grub.d/30_os-probe[HM_linux_xen ###[7mESC[27m[K[7m^MESC[27m[26d### END /etc/grub.d/20_linux_xen ###[7m^MESC[27m[27d[7mESC[27m[K[7mESC[27m[28d### BEGIN /etc/grub.d/2[HMthen default='Advanced options fo$[7mESC[27m[23;1H### END /etc/grub.d/10_linux ###[7m^MESC[27m[25d### BEGIN /etc/grub.d/20[HMx86_64.img[7m^MESC[27m[21d}[7mESC[27m[K[7m^MESC[27m[22dif [ "x$default" = 'CentOS Linux (3.10.0-862.2.3.el7.x86_64) 7 (Core)' ]; [HMname=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[20;8H[7mESC[27m[1K     initrd16 /initramfs-3.10.0-862.2.3.el7.[HMcf-389da6eee4cc[7mESC[27m[18;8H[7mESC[27m[1K   fi[7mESC[27m[K[7m^MESC[27m[19d$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdev[HM[7mESC[27m[16;8H[7mESC[27m[1K      else[7mESC[27m[K[7mESC[27m[17;10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root 570897ca-e759-4c81-90[HM10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos2 --hint-efi=hd0,msdos2 --hint-barem$[HM     set root='hd0,msdos2'[7mESC[27m[K[7mESC[27m[14;8H[7mESC[27m[1K       if [ x$feature_platform_search_hint = xy ]; then[7mESC[27m[15;[HMep[7mESC[27m[10;8H[7mESC[27m[1K    insmod gzio[7mESC[27m[K[7mESC[27m[11;8H[7mESC[27m[1K insmod part_msdos[7mESC[27m[12;9Hinsmod xfs[7mESC[27m[13;8H[7mESC[27m[1K
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM) 7 (Core)' --class centos --class gnu-linux --class gnu $[7mESC[27m[8;8H[7mESC[27m[1K load_video[7mESC[27m[9;9Hset gfxpayload=ke[HM[7mESC[27m[K[7mESC[27m[6d### BEGIN /etc/grub.d/10_linux ###[7mESC[27m[K[7m^MESC[27m[7dmenuentry 'CentOS Linux (3.10.0-862.2.3.el7.x86_64[HMB[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7m^MESC[27m[3dfi[7mESC[27m[4## END /etc/grub.d/01_users ###[7m^MESC[27m[5d[HM[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m([HM[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B
-[HMRegexp[7mESC[27m[K[7mESC[27m[35;9H[7mESC[27m(B[7mESC[27m[0;7mr[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7md[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mk
-[HM[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m End of Par     [7mESC[27m(B[7mESC[27m[0;7mM-C[7mESC[27m(B[7mESC[27m[m Case Sens     [7mESC[27m(B[7mESC[27m[0;7mM-R[7mESC[27m(B[7mESC[27m[m [HM[7mESC[27m[m Cancel[7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Last Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Replace [7mESC[27m[37;56H
-[HM  [7mESC[27m(B[7mESC[27m[0;7mM-J[7mESC[27m(B[7mESC[27m[m FullJstify    [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backwards[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mC[7mESC[27m(B
-[HM[7mESC[27m(B[7mESC[27m[m First Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mT[7mESC[27m(B[7mESC[27m[m Go To Line[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Beg of Par   [HM                                                                                               [7mESC[27m[36;20HY
-[HM[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSearch:      [HMd[7mESC[27m[23d[7mESC[27m[24d[7mESC[27m[25d[7mESC[27m[26d[7mESC[27m[27d[7mESC[27m[28d[7mESC[27m[35d[7mESC[27m[K[7mESC[27m[27d[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A
-[HM[7mESC[27m[7d[7mESC[27m[8d[7mESC[27m[9d[7mESC[27m[10d[7mESC[27m[11d[7mESC[27m[12d[7mESC[27m[13d[7mESC[27m[14d[7mESC[27m[15d[7mESC[27m[16d[7mESC[27m[17d[7mESC[27m[18d[7mESC[27m[19d[7mESC[27m[20d[7mESC[27m[21d[7mESC[27m[22[HM     [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[m UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7m^MESC[27m[3d[7mESC[27m[4d[7mESC[27m[5d[7mESC[27m[6d
-[HMm^J[7mESC[27m(B[7mESC[27m[m Justify[7mESC[27m[37;37H[7mESC[27m(B[7mESC[27m[0;7m^W[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^V[7mESC[27m(B[7mESC[27m[m Next Page
-[HMt Text        [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cur Pos[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^X[7mESC[27m(B[7mESC[27m[m Exit[7mESC[27m[37;19H[7mESC[27m(B[7mESC[27m[0;7[HM[7mESC[27m[0;7m^R[7mESC[27m(B[7mESC[27m[m Read File[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^Y[7mESC[27m(B[7mESC[27m[m Prev Page        [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cu[HM[7mESC[27m[0;7m[ Read 127 lines ][7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m Get Help     [7mESC[27m(B[7mESC[27m[0;7m^O[7mESC[27m(B[7mESC[27m[m WriteOut[7mESC[27m[37G[7mESC[27m(B
-[HMion[7m^MESC[27m[33dif [ "${prev_saved_entry}" ]; then[7mESC[27m[34;3Hset saved_entry="${prev_saved_entry}"[7mESC[27m[35;46H[7mESC[27m(B
-[HMenuentry_id_option="--id"[7m^MESC[27m[27delse[7mESC[27m[2menuentry_id_option=""[7m^MESC[27m[29dfi[7m^MESC[27m[31dexport menuentry_id_opt[HM[7mESC[27m[22set default="${saved_entry}"[7m^MESC[27m[23dfi[7m^MESC[27m[25dif [ x"${feature_menuentry_id}" = xy ]; then[7mESC[27m[26;3Hm[HM${next_entry}"[7mESC[27m[18;4Hset next_entry=[7mESC[27m[19;4Hsave_env next_entry[7mESC[27m[20;4Hset boot_once=true[7m^MESC[27m[21delse
-[HMefix/grubenv ]; then[7mESC[27m[14;3Hload_env[7m^MESC[27m[15dfi[7m^MESC[27m[16dif [ "${next_entry}" ] ; then[7mESC[27m[17;4Hset default="[HMtc/default/grub[7m^MESC[27m[8d#[7m^MESC[27m[10d### BEGIN /etc/grub.d/00_header ###[7m^MESC[27m[11dset pager=1[7m^MESC[27m[13dif [ -s $pr[HM is automatically generated by grub2-mkconfig using templates[7m^MESC[27m[7d# from /etc/grub.d and settings from /e[HM                                     [7mESC[27m[3;1H[7mESC[27m(B[7mESC[27m[m#[7m^MESC[27m[4d# DO NOT EDIT THIS FILE[7m^MESC[27m[5d#[7m^MESC[27m[6d# It[HM49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[H[7mESC[27m[2J[7mESC[27m(B[7mESC[27m[0;7m  GNU nano 2.3.1                    File: /boot/grub2/grub.cfg         [HM[7mESC[27m[?1049h[7mESC[27m[1;37r[7mESC[27m(B[7mESC[27m[m[7mESC[27m[4l[7mESC[27m[?7h[7mESC[27m[?12l[7mESC[27m[?25h[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[39;49m[7mESC[27m[39;[HM[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[Cnano /boot/grub2/grub.cfg 
-[HM[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# yum install -y nano[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[HMComplete!
-[HM
-[HM  nano.x86_64 0:2.3.1-10.el7                                                                                
-[HMInstalled:
-[HM
-[37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM1 
-[HM[7m^M[27m  Verifying  : nano-2.3.1-10.el7.x86_64                                                                 1/[HM                                          1/1 
-[HM###################################### ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64                       [HM####################################  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################[HM##################################   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################[HM################################    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################[HM##############################     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################[HM############################      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################[HM##########################       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################[HM########################        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################[HM#####################          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################[HM###################           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##############################[HM#################            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################[HM###############             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################[HM#############              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################[HM##########                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##################################[HM########                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################[HM######                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################################[HM###                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################[HM                      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################[HM                     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################################[HM                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################  [HM                   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################    [HM                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################       [HM                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################          [HM                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################            [HM               ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################              [HM              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################                 [HM             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################                    [HM            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################                      [HM           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################                        [HM          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################                           [HM         ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################                             [HM        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################                                [HM       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################                                  [37;1H[K:[K[K [KESCESC[K[[[K66[K~~[K
-Installed:
-  nano.x86_64 0:2.3.1-10.el7                                                                                
-
-Complete!
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# yum install -y nano[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C [7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[Cnano /boot/grub2/grub.cfg 
-[7mESC[27m[?1049h[7mESC[27m[1;37r[7mESC[27m(B[7mESC[27m[m[7mESC[27m[4l[7mESC[27m[?7h[7mESC[27m[?12l[7mESC[27m[?25h[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[39;49m[7mESC[27m[39; 49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[H[7mESC[27m[2J[7mESC[27m(B[7mESC[27m[0;7m  GNU nano 2.3.1                    File: /boot/grub2/grub.cfg                                               [7mESC[27m[3;1H[7mESC[27m(B[7mESC[27m[m#[7m^MESC[27m[4d# DO NOT EDIT THIS FILE[7m^MESC[27m[5d#[7m^MESC[27m[6d# It  is automatically generated by grub2-mkconfig using templates[7m^MESC[27m[7d# from /etc/grub.d and settings from /e tc/default/grub[7m^MESC[27m[8d#[7m^MESC[27m[10d### BEGIN /etc/grub.d/00_header ###[7m^MESC[27m[11dset pager=1[7m^MESC[27m[13dif [ -s $pr efix/grubenv ]; then[7mESC[27m[14;3Hload_env[7m^MESC[27m[15dfi[7m^MESC[27m[16dif [ "${next_entry}" ] ; then[7mESC[27m[17;4Hset default=" ${next_entry}"[7mESC[27m[18;4Hset next_entry=[7mESC[27m[19;4Hsave_env next_entry[7mESC[27m[20;4Hset boot_once=true[7m^MESC[27m[21delse
-[7mESC[27m[22set default="${saved_entry}"[7m^MESC[27m[23dfi[7m^MESC[27m[25dif [ x"${feature_menuentry_id}" = xy ]; then[7mESC[27m[26;3Hm enuentry_id_option="--id"[7m^MESC[27m[27delse[7mESC[27m[2menuentry_id_option=""[7m^MESC[27m[29dfi[7m^MESC[27m[31dexport menuentry_id_opt ion[7m^MESC[27m[33dif [ "${prev_saved_entry}" ]; then[7mESC[27m[34;3Hset saved_entry="${prev_saved_entry}"[7mESC[27m[35;46H[7mESC[27m(B
-[7mESC[27m[0;7m[ Read 127 lines ][7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m Get Help     [7mESC[27m(B[7mESC[27m[0;7m^O[7mESC[27m(B[7mESC[27m[m WriteOut[7mESC[27m[37G[7mESC[27m(B
-[7mESC[27m[0;7m^R[7mESC[27m(B[7mESC[27m[m Read File[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^Y[7mESC[27m(B[7mESC[27m[m Prev Page        [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cu t Text        [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cur Pos[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^X[7mESC[27m(B[7mESC[27m[m Exit[7mESC[27m[37;19H[7mESC[27m(B[7mESC[27m[0;7 m^J[7mESC[27m(B[7mESC[27m[m Justify[7mESC[27m[37;37H[7mESC[27m(B[7mESC[27m[0;7m^W[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^V[7mESC[27m(B[7mESC[27m[m Next Page
-     [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[m UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7m^MESC[27m[3d[7mESC[27m[4d[7mESC[27m[5d[7mESC[27m[6d
-[7mESC[27m[7d[7mESC[27m[8d[7mESC[27m[9d[7mESC[27m[10d[7mESC[27m[11d[7mESC[27m[12d[7mESC[27m[13d[7mESC[27m[14d[7mESC[27m[15d[7mESC[27m[16d[7mESC[27m[17d[7mESC[27m[18d[7mESC[27m[19d[7mESC[27m[20d[7mESC[27m[21d[7mESC[27m[22 d[7mESC[27m[23d[7mESC[27m[24d[7mESC[27m[25d[7mESC[27m[26d[7mESC[27m[27d[7mESC[27m[28d[7mESC[27m[35d[7mESC[27m[K[7mESC[27m[27d[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A
-[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSearch:                                                                                                      [7mESC[27m[36;20HY
-[7mESC[27m(B[7mESC[27m[m First Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mT[7mESC[27m(B[7mESC[27m[m Go To Line[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Beg of Par      [7mESC[27m(B[7mESC[27m[0;7mM-J[7mESC[27m(B[7mESC[27m[m FullJstify    [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backwards[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mC[7mESC[27m(B
-[7mESC[27m[m Cancel[7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Last Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Replace [7mESC[27m[37;56H
-[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m End of Par     [7mESC[27m(B[7mESC[27m[0;7mM-C[7mESC[27m(B[7mESC[27m[m Case Sens     [7mESC[27m(B[7mESC[27m[0;7mM-R[7mESC[27m(B[7mESC[27m[m  Regexp[7mESC[27m[K[7mESC[27m[35;9H[7mESC[27m(B[7mESC[27m[0;7mr[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7md[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mk
-[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B
-[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m( B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7m^MESC[27m[3dfi[7mESC[27m[4## END /etc/grub.d/01_users ###[7m^MESC[27m[5d [7mESC[27m[K[7mESC[27m[6d### BEGIN /etc/grub.d/10_linux ###[7mESC[27m[K[7m^MESC[27m[7dmenuentry 'CentOS Linux (3.10.0-862.2.3.el7.x86_64 ) 7 (Core)' --class centos --class gnu-linux --class gnu $[7mESC[27m[8;8H[7mESC[27m[1K load_video[7mESC[27m[9;9Hset gfxpayload=ke :[K[K [KESCESC[K[[[K55[K~~[K[HM1 
-[HM[7m^M[27m  Verifying  : nano-2.3.1-10.el7.x86_64                                                                 1/[HM                                          1/1 
-[HM###################################### ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64                       [HM####################################  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################[HM##################################   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################[HM################################    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################[HM##############################     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################[HM############################      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################[HM##########################       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################[HM########################        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################[HM#####################          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################[HM###################           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##############################[HM#################            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################[HM###############             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################[HM#############              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################[HM##########                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##################################[HM########                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################[HM######                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################################[HM###                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################[HM                      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################[HM                     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################################[HM                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################  [HM                   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################    [HM                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################       [HM                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################          [HM                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################            [HM               ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################              [HM              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################                 [HM             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################                    [HM            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################                      [HM           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################                        [HM          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################                           [HM         ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################                             [HM        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################                                [HM       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################                                  [37;1H[K:[K[K [KESCESC[K[[[K55[K~~[K[HM      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################                                     [HM     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################                                       [HM    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############                                         [HM   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##############                                           [HM  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############                                             [HM ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########                                                 [HM] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########                                                   [HM 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######                                                      [HM1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######                                                       ][HM/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####                                                         ] [HM1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##                                                           ] 1[HM[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [                                                             ] 1/[HMRunning transaction
-[HMTransaction test succeeded
-[HMRunning transaction test
-[HMRunning transaction check
-[HM0     
-[HMA [7m^M^M[27mnano-2.3.1-10.el7.x86_64.rpm                                                         | 440 kB  00:00:0[HM[7m^M[27mnano-2.3.1-10.el7.x86_64.rpm            0% [                              ]  0.0 B/s |    0 B  --:--:-- ET[HMDownloading packages:
-[HMInstalled size: 1.6 M
-[HMTotal download size: 440 k
-[HM
-[HMInstall  1 Package
-[HM============================================================================================================
-[HMTransaction Summary
-[HM
-[HM nano                  x86_64                  2.3.1-10.el7                     base                  440 k
-[HMInstalling:
-[HM============================================================================================================
-[HM Package               Arch                    Version                          Repository             Size
-[HM============================================================================================================
-[HM
-[HMDependencies Resolved
-[HM
-[HM--> Finished Dependency Resolution
-[37;1H[K:[K[K [KESCESC[K[[[K66[K~~[K       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################                                           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################                                          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################                                        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################                                       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#########################                                     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##########################                                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###########################                                   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#############################                                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###############################                               ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################                              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################                             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################                           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#####################################                         ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################################                        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#######################################                       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################################### ###                    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [##################################### ######                  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [#################################### ########                 ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################### ##########                ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################## #############              ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################# ###############             ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [################################ #################            ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################### ###################           ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################## #####################          ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################# ########################        ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [############################ ##########################       ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################### ############################      ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [########################## ##############################     ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################### ################################    ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [######################## ##################################   ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [####################### ####################################  ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64 [###################### ###################################### ] 1/1[7m^M[27m  Installing : nano-2.3.1-10.el7.x86_64                                                                  1/1 
-[7m^M[27m  Verifying  : nano-2.3.1-10.el7.x86_64                                                                 1/ 1 
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[KInstalled:
-:[K[K [KESCESC[KOO[KBB[K  nano.x86_64 0:2.3.1-10.el7                                                                                
-:[K[K [KESCESC[KOO[KBB[K
-:[K[K [KESCESC[KOO[KBB[KComplete!
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# yum install -y nano[7m^MESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C :[K[K [KESCESC[KOO[KBB[K[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[C[7mESC[27m[Cnano /boot/grub2/grub.cfg 
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[?1049h[7mESC[27m[1;37r[7mESC[27m(B[7mESC[27m[m[7mESC[27m[4l[7mESC[27m[?7h[7mESC[27m[?12l[7mESC[27m[?25h[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[?1h[7mESC[27m=[7mESC[27m[39;49m[7mESC[27m[39; :[K[K [KESCESC[KOO[KBB[K49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[H[7mESC[27m[2J[7mESC[27m(B[7mESC[27m[0;7m  GNU nano 2.3.1                    File: /boot/grub2/grub.cfg          :[K[K [KESCESC[KOO[KBB[K                                     [7mESC[27m[3;1H[7mESC[27m(B[7mESC[27m[m#[7m^MESC[27m[4d# DO NOT EDIT THIS FILE[7m^MESC[27m[5d#[7m^MESC[27m[6d# It :[K[K [KESCESC[KOO[KBB[K is automatically generated by grub2-mkconfig using templates[7m^MESC[27m[7d# from /etc/grub.d and settings from /e :[K[K [KESCESC[KOO[KBB[Ktc/default/grub[7m^MESC[27m[8d#[7m^MESC[27m[10d### BEGIN /etc/grub.d/00_header ###[7m^MESC[27m[11dset pager=1[7m^MESC[27m[13dif [ -s $pr :[K[K [KESCESC[KOO[KBB[Kefix/grubenv ]; then[7mESC[27m[14;3Hload_env[7m^MESC[27m[15dfi[7m^MESC[27m[16dif [ "${next_entry}" ] ; then[7mESC[27m[17;4Hset default=" :[K[K [KESCESC[KOO[KBB[K${next_entry}"[7mESC[27m[18;4Hset next_entry=[7mESC[27m[19;4Hsave_env next_entry[7mESC[27m[20;4Hset boot_once=true[7m^MESC[27m[21delse
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[22set default="${saved_entry}"[7m^MESC[27m[23dfi[7m^MESC[27m[25dif [ x"${feature_menuentry_id}" = xy ]; then[7mESC[27m[26;3Hm :[K[K [KESCESC[KOO[KBB[Kenuentry_id_option="--id"[7m^MESC[27m[27delse[7mESC[27m[2menuentry_id_option=""[7m^MESC[27m[29dfi[7m^MESC[27m[31dexport menuentry_id_opt :[K[K [KESCESC[KOO[KBB[Kion[7m^MESC[27m[33dif [ "${prev_saved_entry}" ]; then[7mESC[27m[34;3Hset saved_entry="${prev_saved_entry}"[7mESC[27m[35;46H[7mESC[27m(B
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[0;7m[ Read 127 lines ][7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m Get Help     [7mESC[27m(B[7mESC[27m[0;7m^O[7mESC[27m(B[7mESC[27m[m WriteOut[7mESC[27m[37G[7mESC[27m(B
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[0;7m^R[7mESC[27m(B[7mESC[27m[m Read File[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^Y[7mESC[27m(B[7mESC[27m[m Prev Page        [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cu :[K[K [KESCESC[KOO[KBB[Kt Text        [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cur Pos[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^X[7mESC[27m(B[7mESC[27m[m Exit[7mESC[27m[37;19H[7mESC[27m(B[7mESC[27m[0;7 :[K[K [KESCESC[KOO[KBB[Km^J[7mESC[27m(B[7mESC[27m[m Justify[7mESC[27m[37;37H[7mESC[27m(B[7mESC[27m[0;7m^W[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[55G[7mESC[27m(B[7mESC[27m[0;7m^V[7mESC[27m(B[7mESC[27m[m Next Page
-:[K[K [KESCESC[KOO[KBB[K     [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[m UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7m^MESC[27m[3d[7mESC[27m[4d[7mESC[27m[5d[7mESC[27m[6d
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[7d[7mESC[27m[8d[7mESC[27m[9d[7mESC[27m[10d[7mESC[27m[11d[7mESC[27m[12d[7mESC[27m[13d[7mESC[27m[14d[7mESC[27m[15d[7mESC[27m[16d[7mESC[27m[17d[7mESC[27m[18d[7mESC[27m[19d[7mESC[27m[20d[7mESC[27m[21d[7mESC[27m[22 :[K[K [KESCESC[KOO[KBB[Kd[7mESC[27m[23d[7mESC[27m[24d[7mESC[27m[25d[7mESC[27m[26d[7mESC[27m[27d[7mESC[27m[28d[7mESC[27m[35d[7mESC[27m[K[7mESC[27m[27d[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[A[7mESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSearch:       :[K[K [KESCESC[KOO[KBB[K                                                                                               [7mESC[27m[36;20HY
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m(B[7mESC[27m[m First Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mT[7mESC[27m(B[7mESC[27m[m Go To Line[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Beg of Par    :[K[K [KESCESC[KOO[KBB[K  [7mESC[27m(B[7mESC[27m[0;7mM-J[7mESC[27m(B[7mESC[27m[m FullJstify    [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backwards[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mC[7mESC[27m(B
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[m Cancel[7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Last Line[7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Replace [7mESC[27m[37;56H
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m End of Par     [7mESC[27m(B[7mESC[27m[0;7mM-C[7mESC[27m(B[7mESC[27m[m Case Sens     [7mESC[27m(B[7mESC[27m[0;7mM-R[7mESC[27m(B[7mESC[27m[m  :[K[K [KESCESC[KOO[KBB[KRegexp[7mESC[27m[K[7mESC[27m[35;9H[7mESC[27m(B[7mESC[27m[0;7mr[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7md[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mk
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[[7mESC[27m(B
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[0;7m[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mm[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7m.[7mESC[27m( :[K[K [KESCESC[KOO[KBB[KB[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7ml[7mESC[27m(B[7mESC[27m[m[7mESC[27m(B[7mESC[27m[0;7mv[7mESC[27m(B[7mESC[27m[m[7m^MESC[27m[3dfi[7mESC[27m[4## END /etc/grub.d/01_users ###[7m^MESC[27m[5d :[K[K [KESCESC[KOO[KBB[K[7mESC[27m[K[7mESC[27m[6d### BEGIN /etc/grub.d/10_linux ###[7mESC[27m[K[7m^MESC[27m[7dmenuentry 'CentOS Linux (3.10.0-862.2.3.el7.x86_64 :[K[K [KESCESC[KOO[KBB[K) 7 (Core)' --class centos --class gnu-linux --class gnu $[7mESC[27m[8;8H[7mESC[27m[1K load_video[7mESC[27m[9;9Hset gfxpayload=ke :[K[K [KESCESC[KOO[KBB[Kep[7mESC[27m[10;8H[7mESC[27m[1K    insmod gzio[7mESC[27m[K[7mESC[27m[11;8H[7mESC[27m[1K insmod part_msdos[7mESC[27m[12;9Hinsmod xfs[7mESC[27m[13;8H[7mESC[27m[1K
-:[K[K [KESCESC[KOO[KBB[K     set root='hd0,msdos2'[7mESC[27m[K[7mESC[27m[14;8H[7mESC[27m[1K       if [ x$feature_platform_search_hint = xy ]; then[7mESC[27m[15; :[K[K [KESCESC[KOO[KBB[K10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root --hint-bios=hd0,msdos2 --hint-efi=hd0,msdos2 --hint-barem$ :[K[K [KESCESC[KOO[KBB[K[7mESC[27m[16;8H[7mESC[27m[1K      else[7mESC[27m[K[7mESC[27m[17;10H[7mESC[27m[1K search --no-floppy --fs-uuid --set=root 570897ca-e759-4c81-90 :[K[K [KESCESC[KOO[KBB[Kcf-389da6eee4cc[7mESC[27m[18;8H[7mESC[27m[1K   fi[7mESC[27m[K[7m^MESC[27m[19d$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 biosdev :[K[K [KESCESC[KOO[KBB[Kname=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[20;8H[7mESC[27m[1K     initrd16 /initramfs-3.10.0-862.2.3.el7. :[K[K [KESCESC[KOO[KBB[Kx86_64.img[7m^MESC[27m[21d}[7mESC[27m[K[7m^MESC[27m[22dif [ "x$default" = 'CentOS Linux (3.10.0-862.2.3.el7.x86_64) 7 (Core)' ];  :[K[K [KESCESC[KOO[KBB[Kthen default='Advanced options fo$[7mESC[27m[23;1H### END /etc/grub.d/10_linux ###[7m^MESC[27m[25d### BEGIN /etc/grub.d/20 :[K[K [KESCESC[KOO[KBB[K_linux_xen ###[7mESC[27m[K[7m^MESC[27m[26d### END /etc/grub.d/20_linux_xen ###[7m^MESC[27m[27d[7mESC[27m[K[7mESC[27m[28d### BEGIN /etc/grub.d/2 :[K[K [KESCESC[KOO[KBB[K0_ppc_terminfo ###[7m^MESC[27m[29d### END /etc/grub.d/20_ppc_terminfo ###[7m^MESC[27m[31d### BEGIN /etc/grub.d/30_os-probe :[K[K [KESCESC[KOO[KBB[Kr ###[7m^MESC[27m[32d### END /etc/grub.d/30_os-prober ###[7m^MESC[27m[33d[7mESC[27m[K[7mESC[27m[34d### BEGIN /etc/grub.d/40_custom ###
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[K[7m^MESC[27m[35d[7mESC[27m[K[7mESC[27m[36;20H[7mESC[27m(B[7mESC[27m[0;7mO[7mESC[27m(B[7mESC[27m[m WriteOut  [7mESC[27m[38G[7mESC[27m(B[7mESC[27m[0;7mR[7mESC[27m(B[7mESC[27m[m Read File 
-:[K[K [KESCESC[KOO[KBB[K[7mESC[27m[56G[7mESC[27m(B[7mESC[27m[0;7mY[7mESC[27m(B[7mESC[27m[m Prev Page      [7mESC[27m(B[7mESC[27m[0;7m^K[7mESC[27m(B[7mESC[27m[m Cut Text       [7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B :[K[K [KESCESC[KOO[KBB[K[7mESC[27m[m Cur Pos[7mESC[27m[K[7mESC[27m[37;2H[7mESC[27m(B[7mESC[27m[0;7mX[7mESC[27m(B[7mESC[27m[m Exit  [7mESC[27m[37;20H[7mESC[27m(B[7mESC[27m[0;7mJ[7mESC[27m(B[7mESC[27m[m Justify  [7mESC[27m[38 :[K[K [KESCESC[KOO[KBB[KG[7mESC[27m(B[7mESC[27m[0;7mW[7mESC[27m(B[7mESC[27m[m Where Is[7mESC[27m[37;56H[7mESC[27m(B[7mESC[27m[0;7mV[7mESC[27m(B[7mESC[27m[m Next Page      [7mESC[27m(B[7mESC[27m[0;7m^U[7mESC[27m(B[7mESC[27m[ :[K[K [KESCESC[KOO[KBB[Km UnCut Text     [7mESC[27m(B[7mESC[27m[0;7m^T[7mESC[27m(B[7mESC[27m[m To Spell[7mESC[27m[19;98Hrd.lvm      lv[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.l :[K[K [KESCESC[KOO[KBB[Kvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G     [7m^M[27m$ console=tty0 console=ttyS0,115200n8 net.ifnames=0 bi :[K[K [KESCESC[KOO[KBB[Kosdevname=0 elevator=noop crashkernel=auto rd.lvm.lv=$[7mESC[27m[19;107v[7m^M[27m$vm.lv=VolGroup00/LogVol00 rd.lvm.lv=VolG :[K[K [KESCESC[KOO[KBB[Kroup00/LogVol01 rhgb quiet[7mESC[27m[K[7mESC[27m[8G[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7mModified[7mESC[27m[19;8H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[ :[K[K [KESCESC[KOO[KBB[K1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1P[7mESC[27m[1Pb rd.lvm.lv=VolG :[K[K [KESCESC[KOO[KBB[Kroup00/LogVol01 rhgb quiet[7mESC[27m[19;9[7mESC[27m[1Pv rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;9Hg rd.lvm.lv=VolGr :[K[K [KESCESC[KOO[KBB[Koup00/LogVol01 rhgb quiet[7mESC[27m[19;10H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;11Hr rd.lvm.lv=VolGroup0 :[K[K [KESCESC[KOO[KBB[K0/LogVol01 rhgb quiet[7mESC[27m[19;12Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;13oo rd.lvm.lv=VolGroup00/Lo :[K[K [KESCESC[K[[[K66[K~~[KgVol01 rhgb quiet[7mESC[27m[19;14Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;15H/ rd.lvm.lv=VolGroup00/LogVol 01 rhgb quiet[7mESC[27m[19;16Hk rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup00/LogVol01 r hgb quiet[7mESC[27m[19;18H[7mESC[27m[Z[7mESC[27m[1[7mESC[27m[1Pl rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;17Hv rd.lvm.lv=VolGroup0 0/LogVol01 rhgb quiet[7mESC[27m[19;18H_ rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;19Hr rd.lvm.lv=VolGroup00/Lo gVol01 rhgb quiet[7mESC[27m[19;20Ho rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[19;21oo rd.lvm.lv=VolGroup00/LogVol 01 rhgb quiet[7mESC[27m[19;22Ht rd.lvm.lv=VolGroup00/LogVol01 rhgb quiet[7mESC[27m[1[7mESC^H^H^H^MESC[27m[35d[7mESC[27m(B[7mESC[27m[0;7mSave mo dified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                [7mESC[27m[36; 1H Y[7mESC[27m(B[7mESC[27m[m Yes[7mESC[27m[K[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m N[7mESC[27m(B[7mESC[27m[m No  [7mESC[27m[37;17H[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel[7mESC[27m[ K[7mESC[27m[35;62H[7m^MESC[27m(B[7mESC[27m[0;7mFile Name to Write: /boot/grub2/grub.cfg                    [7m^MESC[27m[36d^G[7mESC[27m(B[7mESC[27m[m  Get Help[7mESC[27m[36;28H[7mESC[27m(B[7mESC[27m[0;7mM-D[7mESC[27m(B[7mESC[27m[m DOS Format[7mESC[27m[36;55H[7mESC[27m(B[7mESC[27m[0;7mM-A[7mESC[27m(B[7mESC[27m[m Append[7mESC[27m[36;82H [7mESC[27m(B[7mESC[27m[0;7mM-B[7mESC[27m(B[7mESC[27m[m Backup File[7m^MESC[27m[37d[7mESC[27m(B[7mESC[27m[0;7m^C[7mESC[27m(B[7mESC[27m[m Cancel             [7mESC[27m(B[7mESC[27m[0;7mM-M [7mESC[27m(B[7mESC[27m[m Mac Format[7mESC[27m[37;55H[7mESC[27m(B[7mESC[27m[0;7mM-P[7mESC[27m(B[7mESC[27m[m Prepend[7mESC[27m[35;41H[7m^MESC[27m[36d[7mESC[27m[39;49m[7mESC[27m(B[7mESC[27m[m[7mESC[27m[ J[7mESC[27m[1;99H[7mESC[27m(B[7mESC[27m[0;7m        [7mESC[27m[35;44H[7mESC[27m(B[7mESC[27m[m[7mESC[27m[1K [7mESC[27m(B[7mESC[27m[0;7m[ Wrote 127 lines ][7mESC[27m(B[7mESC[27m[m[7mESC[27m[K[7mESC[27m [37;108H[7mESC[27m[37;1H[7mESC[27m[?1049l[7m^MESC[27m[?1l[7mESC[27m>[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# shutdw[7m^G^HESC[27m[Kown -r now
-Running in chroot, ignoring request.
-[7mESC[27m]0;vagrant@lvm:/boot[7m^G[27m[root@lvm boot]# exit
-exit
-[7mESC[27m]0;vagrant@lvm:/home/vagrant[7m^G[27m[root@lvm vagrant]# shutdown -r now
-PolicyKit daemon disconnected from the bus.
-We are no longer a registered authentication agent.
-Connection to 127.0.0.1 closed by remote host.[7m^M[27m
-Connection to 127.0.0.1 closed.[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-ssh_exchange_identification: Connection closed by remote host[7m^M[27m
-[7mESC[27m]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[7m^G[27m[zerkalo7@server9 Ex1]$ vagrant ssh
-Last login: Mon Feb 24 10:10:20 2020 from 10.0.2.2[7m^M[27m
-[7mESC[27m]0;vagrant@lvm:~[7m^GESC[27m[?1034h[vagrant@lvm ~]$ lsblk
-NAME                    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-sda                       8:0    0   40G  0 disk 
-├─sda1                    8:1    0    1M  0 part 
-├─sda2                    8:2    0    1G  0 part /boot
-└─sda3                    8:3    0   39G  0 part 
-  ├─VolGroup00-LogVol01 253:1    0  1.5G  0 lvm  [SWAP]
-  └─VolGroup00-LogVol00 253:2    0 37.5G  0 lvm  
-sdb                       8:16   0   10G  0 disk 
-└─vg_root-lv_root       253:0    0   10G  0 lvm  /
-:[K[K [KESCESC[KOO[KBB[Ksdc                       8:32   0    2G  0 disk 
-:[K[K [KESCESC[KOO[KBB[Ksdd                       8:48   0    1G  0 disk 
-:[K[K[?1l>[?1049l]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git init .
-Initialized empty Git repository in /home/zerkalo7/Learning/Lesson3/Ex1/.git/
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git init .[K[K[K[K[K[K[K add typo[Kescript
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ gui[K[Ki[K[Ktou [Kch readme.md
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git add readme.md
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git add Vagrantfile
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git commit -m "First step:[K"
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'zerkalo7@server9.(none)')
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git config --global user.email "zerkalo7.more@gmail.com"
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git config --global user.a[Knma[K[Kame "Viacheslav Kozlov"
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git config --global user.name "Viacheslav Kozlov"email "zerkalo7.more@gmail.com"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pmmit -m "First step"
-[master (root-commit) 083b7cd] First step
- 3 files changed, 1877 insertions(+)
- create mode 100644 Vagrantfile
- create mode 100644 readme.md
- create mode 100644 typescript
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git[Kr remote add origin git@github.com:zerkalo7/lesson3.git
-bash: gir: command not found...
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ gir remote add origin git@github.com:zerkalo7/lesson3.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@y[1P[1@t
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git push -u org[Kigin master
-Counting objects: 5, done.
-Delta compression using up to 16 threads.
-Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
-Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 20.63 KiB | 0 bytes/s, done.
-Total 5 (delta 0), reused 0 (delta 0)
-To git@github.com:zerkalo7/lesson3.git
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ nano readme.md 
-[?1049h[1;37r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.3.1                       File: readme.md                                                      [35;47H[ Read 0 lines ][36d^G(B[m Get Help	  (B[0;7m^O(B[m WriteOut[37G(B[0;7m^R(B[m Read File[55G(B[0;7m^Y(B[m Prev Page	(B[0;7m^K(B[m Cut Text	  (B[0;7m^C(B[m Cur Pos[37d(B[0;7m^X(B[m Exit[37;19H(B[0;7m^J(B[m Justify[37;37H(B[0;7m^W(B[m Where Is[55G(B[0;7m^V(B[m Next Page	(B[0;7m^U(B[m UnCut Text     (B[0;7m^T(B[m To Spell[3d[1;99H(B[0;7mModified[3d(B[m## OTUS-KU 	 	LI unu   inux[35d[K[3;15H-Lesson 3[4d# Pflf    Задн ание о [A[3;23H 	7[4;35r8[4dM[1;37r[4;1H[5d[4;35r[35;1H
-[1;37r[4;1H[4;11H основное[5d[6dВ соотвес	 	тс 	 	тси  ствии с зада    [Z      	 	      [KЗап  [KВ соответствии с к указание[Z [Zями в м в мт етодчике    ичке	вполняем [Z       ыполняем действия:[7d[A[A[A[4;19H  7[5;35r8[5dM[1;37r[5;1H[6d[5;35r[35;1H
-[1;37r[5;1H[6d[6;60H  [7d* уменьшаем том	под / до 8П G  [8d* dsltk     вд ыделям том под /home[9d*[A [C[C[C[C[C	ем том под /home[8;10H[9d*[10d[A* выделям топ 	ем топ[10G[16G м под / var	на mirror[10d[9;34H[8;25H[7;30H[8;25H  7[9;35r8[9dM[1;37r[9;1H[10d[9;35r[35;1H
-[1;37r[9;1H[9;34H  [10d* ltkz    в хом    дя ля /home е делаем том для снэпшотов[C в в[11d* проверяем механизм   [Z [Z      	 	     п  пробуем механизм работы снэпшотов (создать, удалить, восстановить[Z[Z[Z , удалить, восстановить[11;46Hф, удалить, восстановить[11;47Hа, удалить, восстановить[11;48Hй, удалить, восстановить[11;49Hо, удалить, восстановить[11;50Hы, удалить, восстановить[11;51H,[Z[1Pлы, удалить, восстановить[11;50H[C, [C[C[C	[C[C[C , восстановить[11;61Hф, восстановить[11;62Hа, восстановить[11;63Hй, восстановить[11;64Hл, восстановить[11;65Hы, восстановить[11;66H, [C[C[C[C	[C[C[C[C[C[C[C	файоы  лы)[12d[13dРезультат действий запсиа[Z [Z   писан ком   утили     в t  утилитой script в файл tup  ypescript.[Z[Z[Z[Z[1P[1P[1P[1P[1P[1P[1P[1P r script в файл typescript.[13;29Hj script в файл typescript.[13;30Hv script в файл typescript.[13;31Hf script в файл typescript.[13;32Hy script в файл typescript.[13;33H[1P[1P[1P[1P[1Pк script в файл typescript.[13;29Hо script в файл typescript.[13;30Hм script в файл typescript.[13;31Hн script в файл typescript.[13;32Hа script в файл typescript.[13;33Hд script в файл typescript.[13;34Hо script в файл typescript.[13;35Hй script в файл typescript.[13;36H  script в файл typescript.[13;37H[1P[13;62H[35d(B[0;7mSave modified buffer (ANSWERING "No" WILL DESTROY CHANGES) ?                                                [36;1H Y(B[m Yes[K[37d(B[0;7m N(B[m No  [37;17H(B[0;7m^C(B[m Cancel[K[35;62H(B[0;7mFile Name to Write: readme.md                               [36d^G(B[m Get Help[36;28H(B[0;7mM-D(B[m DOS Format[36;55H(B[0;7mM-A(B[m Append[36;82H(B[0;7mM-B(B[m Backup File[37d(B[0;7m^C(B[m Cancel	           (B[0;7mM-M(B[m Mac Format[37;55H(B[0;7mM-P(B[m Prepend[35;30H[36d[39;49m(B[m[J[1;99H(B[0;7m        [35;45H(B[m[1K (B[0;7m[ Wrote 12 lines ](B[m[K[37;108H[37;1H[?1049l[?1l>]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ gu[Kid[Kt commit -mm[K "[K"Step 2"
-# On branch master
-# Changes not staged for commit:
-#   (use "git add <file>..." to update what will be committed)
-#   (use "git checkout -- <file>..." to discard changes in working directory)
-#
-#	modified:   readme.md
-#	modified:   typescript
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	.vagrant/
-no changes added to commit (use "git add" and/or "git commit -a")
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git commit -m "Step 2"[1@a
-[master 4f7c9df] Step 2
- 2 files changed, 81 insertions(+), 1 deletion(-)
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ ll
-total 200
--rw-rw-r--. 1 zerkalo7 zerkalo7    635 фев 24 13:41 readme.md
--rw-rw-r--. 1 zerkalo7 zerkalo7 196608 фев 24 13:39 typescript
--rw-rw-r--. 1 zerkalo7 zerkalo7   2433 фев 24 12:45 Vagrantfile
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git status
-# On branch master
-# Your branch is ahead of 'origin/master' by 1 commit.
-#   (use "git push" to publish your local commits)
-#
-# Untracked files:
-#   (use "git add <file>..." to include in what will be committed)
-#
-#	.vagrant/
-nothing added to commit but untracked files present (use "git add" to track)
-]0;zerkalo7@server9:~/Learning/Lesson3/Ex1[zerkalo7@server9 Ex1]$ git statusll[Kgit commit -am "Step 2"ll[Kgit status[Kgit push
-warning: push.default is unset; its implicit value is changing in
-Git 2.0 from 'matching' to 'simple'. To squelch this message
-and maintain the current behavior after the default changes, use:
-
-  git config --global push.default matching
-
-To squelch this message and adopt the new behavior now, use:
-
-  git config --global push.default simple
-
-See 'git help config' and search for 'push.default' for further information.
-(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
-'current' instead of 'simple' if you sometimes use older versions of Git)
-
-Counting objects: 7, done.
+Connection to 127.0.0.1 closed.
